@@ -22,7 +22,7 @@ AR Path="/5D93F139" Ref="U?"  Part="1"
 AR Path="/5D93910E/5D93F139" Ref="U3"  Part="1" 
 F 0 "U3" H 5100 2917 50  0000 C CNN
 F 1 "74HC14" H 5100 2826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 2600 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5100 2600 50  0001 C CNN
 	1    5100 2600
 	1    0    0    -1  
@@ -65,7 +65,7 @@ AR Path="/5D93F14D" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D93F14D" Ref="C1"  Part="1" 
 F 0 "C1" V 4271 2600 50  0000 C CNN
 F 1 "100nF" V 4362 2600 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 2600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 2600 50  0001 C CNN
 F 3 "~" H 4500 2600 50  0001 C CNN
 	1    4500 2600
 	0    1    1    0   
@@ -94,7 +94,7 @@ AR Path="/5D9599AD" Ref="U?"  Part="2"
 AR Path="/5D93910E/5D9599AD" Ref="U3"  Part="2" 
 F 0 "U3" H 5100 3417 50  0000 C CNN
 F 1 "74HC14" H 5100 3326 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 3100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 3100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5100 3100 50  0001 C CNN
 	2    5100 3100
 	1    0    0    -1  
@@ -107,7 +107,7 @@ AR Path="/5D9599B3" Ref="U?"  Part="3"
 AR Path="/5D93910E/5D9599B3" Ref="U3"  Part="3" 
 F 0 "U3" H 5100 3917 50  0000 C CNN
 F 1 "74HC14" H 5100 3826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 3600 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 3600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5100 3600 50  0001 C CNN
 	3    5100 3600
 	1    0    0    -1  
@@ -120,7 +120,7 @@ AR Path="/5D9599B9" Ref="U?"  Part="4"
 AR Path="/5D93910E/5D9599B9" Ref="U3"  Part="4" 
 F 0 "U3" H 5100 4417 50  0000 C CNN
 F 1 "74HC14" H 5100 4326 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 4100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5100 4100 50  0001 C CNN
 	4    5100 4100
 	1    0    0    -1  
@@ -133,7 +133,7 @@ AR Path="/5D9599BF" Ref="U?"  Part="5"
 AR Path="/5D93910E/5D9599BF" Ref="U3"  Part="5" 
 F 0 "U3" H 5100 4917 50  0000 C CNN
 F 1 "74HC14" H 5100 4826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 4600 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 4600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5100 4600 50  0001 C CNN
 	5    5100 4600
 	1    0    0    -1  
@@ -146,7 +146,7 @@ AR Path="/5D9599C5" Ref="U?"  Part="7"
 AR Path="/5D93910E/5D9599C5" Ref="U3"  Part="7" 
 F 0 "U3" V 5317 5850 50  0000 C CNN
 F 1 "74HC14" V 5226 5850 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4950 5850 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4950 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4950 5850 50  0001 C CNN
 	7    4950 5850
 	0    -1   -1   0   
@@ -159,7 +159,7 @@ AR Path="/5D9599D1" Ref="U?"  Part="6"
 AR Path="/5D93910E/5D9599D1" Ref="U3"  Part="6" 
 F 0 "U3" H 5100 5417 50  0000 C CNN
 F 1 "74HC14" H 5100 5326 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 5100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 5100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5100 5100 50  0001 C CNN
 	6    5100 5100
 	1    0    0    -1  
@@ -218,7 +218,7 @@ AR Path="/5D99245D" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D99245D" Ref="C2"  Part="1" 
 F 0 "C2" V 4271 3100 50  0000 C CNN
 F 1 "100nF" V 4362 3100 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 3100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 3100 50  0001 C CNN
 F 3 "~" H 4500 3100 50  0001 C CNN
 	1    4500 3100
 	0    1    1    0   
@@ -283,7 +283,7 @@ AR Path="/5D993421" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D993421" Ref="C3"  Part="1" 
 F 0 "C3" V 4271 3600 50  0000 C CNN
 F 1 "100nF" V 4362 3600 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 3600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 3600 50  0001 C CNN
 F 3 "~" H 4500 3600 50  0001 C CNN
 	1    4500 3600
 	0    1    1    0   
@@ -348,7 +348,7 @@ AR Path="/5D9961E0" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D9961E0" Ref="C4"  Part="1" 
 F 0 "C4" V 4271 4100 50  0000 C CNN
 F 1 "100nF" V 4362 4100 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 4100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 4100 50  0001 C CNN
 F 3 "~" H 4500 4100 50  0001 C CNN
 	1    4500 4100
 	0    1    1    0   
@@ -413,7 +413,7 @@ AR Path="/5D99785B" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D99785B" Ref="C5"  Part="1" 
 F 0 "C5" V 4271 4600 50  0000 C CNN
 F 1 "100nF" V 4362 4600 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 4600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 4600 50  0001 C CNN
 F 3 "~" H 4500 4600 50  0001 C CNN
 	1    4500 4600
 	0    1    1    0   
@@ -478,7 +478,7 @@ AR Path="/5D999536" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D999536" Ref="C6"  Part="1" 
 F 0 "C6" V 4271 5100 50  0000 C CNN
 F 1 "100nF" V 4362 5100 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 5100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 5100 50  0001 C CNN
 F 3 "~" H 4500 5100 50  0001 C CNN
 	1    4500 5100
 	0    1    1    0   
@@ -591,7 +591,7 @@ AR Path="/5D68F347" Ref="C?"  Part="1"
 AR Path="/5D93910E/5D68F347" Ref="C7"  Part="1" 
 F 0 "C7" V 4271 6500 50  0000 C CNN
 F 1 "100pF" V 4362 6500 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4500 6500 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 6500 50  0001 C CNN
 F 3 "~" H 4500 6500 50  0001 C CNN
 	1    4500 6500
 	0    1    1    0   
