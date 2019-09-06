@@ -1,0 +1,51 @@
+.title KiCad schematic
+P1 NC_01 CONN_01X01
+P2 NC_02 CONN_01X01
+P3 NC_03 CONN_01X01
+P4 NC_04 CONN_01X01
+P5 NC_05 CONN_01X01
+P6 NC_06 CONN_01X01
+P7 NC_07 NC_08 NC_09 +3V3 +5V GND GND NC_10 Power
+P11 NC_11 NC_12 NC_13 GND NC_14 spenab sppwm NC_15 NC_16 NC_17 PWM
+P8 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 Probe Analog
+P12 m3dir m2dir m1dir m3step m2step m1step NC_25 NC_26 PWM
+P9 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 Analog
+P13 Xmn Xmx Ymn Ymx Zmn Zmx NC_35 NC_36 Communication
+P10 GND GND NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 NC_56 m4dir m4enab NC_57 m4step m3enab NC_58 NC_59 NC_60 NC_61 m2enab m1enab NC_62 +5V +5V Digital
+U1 VREF+ Net-_J3-Pad1_ m1enab Net-_J3-Pad3_ m1dir Net-_J3-Pad5_ m1step GND m2enab Net-_J3-Pad7_ m2dir Net-_J3-Pad9_ GND m2step Net-_J3-Pad11_ +5V 4504
+K1 Net-_K1-Pad1_ Net-_C8-Pad1_ NC_63 PWR VREF+ G5Q-1
+J2 Net-_C8-Pad1_ Net-_C8-Pad2_ Conn_01x02_Male
+D1 Net-_C8-Pad2_ Net-_C8-Pad1_ DIODE
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 100p
+J3 Net-_J3-Pad1_ GND Net-_J3-Pad3_ GND Net-_J3-Pad5_ GND Net-_J3-Pad7_ GND Net-_J3-Pad9_ GND Net-_J3-Pad11_ GND Net-_J3-Pad13_ GND Net-_J3-Pad15_ GND Net-_J3-Pad17_ GND Net-_J3-Pad19_ GND Net-_J3-Pad21_ GND Net-_J3-Pad23_ GND Motor_Control
+Q3 spenab Net-_K1-Pad1_ GND IRLZ44N
+Q4 Net-_Q2-Pad1_ Net-_C8-Pad2_ GND IRLZ44N
+Q1 GND sppwm Net-_Q1-Pad3_ 2N7000
+Q2 Net-_Q2-Pad1_ Net-_Q1-Pad3_ +5V BS250
+R15 Net-_Q2-Pad1_ GND 10K
+R14 +5V Net-_Q1-Pad3_ 10K
+J4 /Debounce_x6/SWXmin+ GND /Debounce_x6/SWXmax+ GND /Debounce_x6/SWYmin+ GND /Debounce_x6/SWYmax+ GND /Debounce_x6/SWZmin+ GND /Debounce_x6/SWZmax+ GND VREF+ GND Limit_Switches
+U2 VREF+ Net-_J3-Pad13_ m3enab Net-_J3-Pad15_ m3dir Net-_J3-Pad17_ m3step GND m4enab Net-_J3-Pad19_ m4dir Net-_J3-Pad21_ GND m4step Net-_J3-Pad23_ +5V 4504
+JP1 +3V3 VREF+ +5V Jumper_3_Bridged12
+U3 Net-_C1-Pad1_ Xmn Net-_C2-Pad1_ Xmx Net-_C3-Pad1_ Ymn GND Ymx Net-_C4-Pad1_ Zmn Net-_C5-Pad1_ Zmx Net-_C6-Pad1_ VREF+ 74HC14
+R1 /Debounce_x6/SWXmin+ VREF+ 10K
+R7 Net-_C1-Pad1_ /Debounce_x6/SWXmin+ 10K
+C1 Net-_C1-Pad1_ GND 100n
+R2 /Debounce_x6/SWXmax+ VREF+ 10K
+R8 Net-_C2-Pad1_ /Debounce_x6/SWXmax+ 10K
+C2 Net-_C2-Pad1_ GND 100n
+R3 /Debounce_x6/SWYmin+ VREF+ 10K
+R9 Net-_C3-Pad1_ /Debounce_x6/SWYmin+ 10K
+C3 Net-_C3-Pad1_ GND 100n
+R4 /Debounce_x6/SWYmax+ VREF+ 10K
+R10 Net-_C4-Pad1_ /Debounce_x6/SWYmax+ 10K
+C4 Net-_C4-Pad1_ GND 100n
+R5 /Debounce_x6/SWZmin+ VREF+ 10K
+R11 Net-_C5-Pad1_ /Debounce_x6/SWZmin+ 10K
+C5 Net-_C5-Pad1_ GND 100n
+R6 /Debounce_x6/SWZmax+ VREF+ 10K
+R12 Net-_C6-Pad1_ /Debounce_x6/SWZmax+ 10K
+C6 Net-_C6-Pad1_ GND 100n
+R13 Probe VREF+ 10K
+C7 Probe GND 100p
+.end
