@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date "mar. 31 mars 2015"
 Rev ""
@@ -489,17 +489,6 @@ Wire Wire Line
 	4300 5800 4300 6300
 Wire Wire Line
 	4300 6300 4300 6700
-$Comp
-L power:GND #PWR03
-U 1 1 5D5F4964
-P 2550 3000
-F 0 "#PWR03" H 2550 2750 50  0001 C CNN
-F 1 "GND" H 2555 2827 50  0000 C CNN
-F 2 "" H 2550 3000 50  0001 C CNN
-F 3 "" H 2550 3000 50  0001 C CNN
-	1    2550 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 2900 2550 2900
 $Comp
@@ -574,98 +563,6 @@ Wire Wire Line
 	8850 2550 8950 2550
 Wire Wire Line
 	7450 4250 8300 4250
-$Sheet
-S 2850 1400 750  1600
-U 5D93910E
-F0 "Debounce_x6" 50
-F1 "Debounce_x6.sch" 50
-F2 "VCC" I R 3600 1450 50 
-F3 "GND" I L 2850 2900 50 
-F4 "Xmin" O R 3600 1550 50 
-F5 "Xmax" O R 3600 1750 50 
-F6 "Ymin" O R 3600 1950 50 
-F7 "Ymax" O R 3600 2150 50 
-F8 "Zmin" O R 3600 2350 50 
-F9 "Zmax" O R 3600 2550 50 
-F10 "SWXmin-" I L 2850 1600 50 
-F11 "SWXmax+" I L 2850 1700 50 
-F12 "SWXmax-" I L 2850 1800 50 
-F13 "SWYmin+" I L 2850 1900 50 
-F14 "SWYmin-" I L 2850 2000 50 
-F15 "SWYmax+" I L 2850 2100 50 
-F16 "SWYmax-" I L 2850 2200 50 
-F17 "SWZmin+" I L 2850 2300 50 
-F18 "SWZmin-" I L 2850 2400 50 
-F19 "SWZmax+" I L 2850 2500 50 
-F20 "SWZmax-" I L 2850 2600 50 
-F21 "SWXmin+" I L 2850 1500 50 
-F22 "SWProbe+" I L 2850 2700 50 
-F23 "SWProbe-" I L 2850 2800 50 
-F24 "Probe" O R 3600 2750 50 
-$EndSheet
-$Comp
-L Relay:G5Q-1 K1
-U 1 1 5D84DB78
-P 2200 4450
-F 0 "K1" H 2630 4496 50  0000 L CNN
-F 1 "G5Q-1" H 2630 4405 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5Q-1" H 2650 4400 50  0001 L CNN
-F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 2850 4300 50  0001 L CNN
-	1    2200 4450
-	1    0    0    -1  
-$EndComp
-Text GLabel 2000 3850 1    50   Input ~ 0
-VREF+
-$Comp
-L power:GND #PWR01
-U 1 1 5D85CAAF
-P 2000 5300
-F 0 "#PWR01" H 2000 5050 50  0001 C CNN
-F 1 "GND" H 2000 5150 50  0000 C CNN
-F 2 "" H 2000 5300 50  0000 C CNN
-F 3 "" H 2000 5300 50  0000 C CNN
-	1    2000 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5D85CF82
-P 2400 7150
-F 0 "#PWR02" H 2400 6900 50  0001 C CNN
-F 1 "GND" H 2400 7000 50  0000 C CNN
-F 2 "" H 2400 7150 50  0000 C CNN
-F 3 "" H 2400 7150 50  0000 C CNN
-	1    2400 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 5150 2000 5300
-Wire Wire Line
-	2400 6800 2400 7000
-Wire Wire Line
-	3300 5600 2900 5600
-Wire Wire Line
-	2000 3850 2000 4150
-Text GLabel 2300 3850 1    50   Input ~ 0
-PWR
-Wire Wire Line
-	2300 3850 2300 4150
-NoConn ~ 2500 4150
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5D8BF281
-P 3500 5350
-F 0 "J2" H 3472 5324 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 3472 5233 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 5350 50  0001 C CNN
-F 3 "~" H 3500 5350 50  0001 C CNN
-	1    3500 5350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 5200 2900 5200
-Wire Wire Line
-	2400 5200 2400 4750
 Text GLabel 6500 3600 2    50   Output ~ 0
 m1dir
 Text GLabel 6500 3500 2    50   Output ~ 0
@@ -814,8 +711,6 @@ Wire Wire Line
 	3600 2550 3900 2550
 Text GLabel 3900 2750 2    50   Output ~ 0
 Probe
-Text GLabel 4400 4100 0    50   Input ~ 0
-Probe
 Wire Wire Line
 	3600 2750 3900 2750
 Wire Wire Line
@@ -828,14 +723,6 @@ Wire Wire Line
 	5800 2600 6500 2600
 Wire Wire Line
 	5800 2700 6500 2700
-Text GLabel 1450 4950 0    50   Input ~ 0
-spenab
-Text GLabel 1150 6700 0    50   Input ~ 0
-sppwm
-Wire Wire Line
-	1450 4950 1700 4950
-Wire Wire Line
-	1150 6700 1200 6700
 NoConn ~ 4550 3400
 NoConn ~ 4550 3500
 NoConn ~ 4550 3600
@@ -891,12 +778,6 @@ NoConn ~ 5950 6600
 NoConn ~ 4550 2150
 NoConn ~ 4900 2150
 NoConn ~ 4250 2500
-Text GLabel 1100 3600 2    50   Output ~ 0
-PWR
-Wire Wire Line
-	1000 3450 1000 3600
-Wire Wire Line
-	1000 3600 1100 3600
 Wire Wire Line
 	10200 2450 8950 2450
 Wire Wire Line
@@ -997,50 +878,12 @@ Connection ~ 10800 2450
 Wire Wire Line
 	10800 2450 10800 2550
 $Comp
-L pspice:DIODE D1
-U 1 1 5E39969C
-P 2400 5400
-F 0 "D1" V 2446 5272 50  0000 R CNN
-F 1 "DIODE" V 2355 5272 50  0000 R CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2400 5400 50  0001 C CNN
-F 3 "~" H 2400 5400 50  0001 C CNN
-	1    2400 5400
-	0    -1   -1   0   
-$EndComp
-Connection ~ 2400 5600
-Connection ~ 2400 5200
-Wire Wire Line
-	3300 5200 3300 5350
-Wire Wire Line
-	3300 5450 3300 5600
-$Comp
-L Device:C_Small C8
-U 1 1 5E3EEAF6
-P 2900 5400
-F 0 "C8" H 2992 5446 50  0000 L CNN
-F 1 "100pF" H 2992 5355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2900 5400 50  0001 C CNN
-F 3 "~" H 2900 5400 50  0001 C CNN
-	1    2900 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 5300 2900 5200
-Connection ~ 2900 5200
-Wire Wire Line
-	2900 5200 2400 5200
-Wire Wire Line
-	2900 5500 2900 5600
-Connection ~ 2900 5600
-Wire Wire Line
-	2900 5600 2400 5600
-$Comp
 L Connector_Generic:Conn_02x12_Odd_Even J3
 U 1 1 5E4D7194
 P 10400 2850
 F 0 "J3" H 10450 3567 50  0000 C CNN
 F 1 "Motor_Control" H 10450 3476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Horizontal" H 10400 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 10400 2850 50  0001 C CNN
 F 3 "~" H 10400 2850 50  0001 C CNN
 	1    10400 2850
 	1    0    0    -1  
@@ -1057,109 +900,6 @@ Wire Wire Line
 	10200 2750 9100 2750
 Wire Wire Line
 	9100 2750 9100 3150
-$Comp
-L Transistor_FET:IRLZ44N Q3
-U 1 1 5D7493F9
-P 1900 4950
-F 0 "Q3" H 2106 4996 50  0000 L CNN
-F 1 "IRLZ44N" H 2106 4905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2150 4875 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 1900 4950 50  0001 L CNN
-	1    1900 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRLZ44N Q4
-U 1 1 5D74AEFE
-P 2300 6600
-F 0 "Q4" H 2506 6646 50  0000 L CNN
-F 1 "IRLZ44N" H 2506 6555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2550 6525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2300 6600 50  0001 L CNN
-	1    2300 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 5600 2400 6400
-$Comp
-L Transistor_FET:2N7000 Q1
-U 1 1 5D7EB302
-P 1400 6700
-F 0 "Q1" H 1606 6746 50  0000 L CNN
-F 1 "2N7000" H 1606 6655 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1600 6625 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 1400 6700 50  0001 L CNN
-	1    1400 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BS250 Q2
-U 1 1 5D7EECE7
-P 1850 6350
-F 0 "Q2" H 2056 6304 50  0000 L CNN
-F 1 "BS250" H 2056 6395 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2050 6275 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 1850 6350 50  0001 L CNN
-	1    1850 6350
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5D8C41F5
-P 1950 6800
-F 0 "R15" H 2020 6846 50  0000 L CNN
-F 1 "10K" H 2020 6755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 1880 6800 50  0001 C CNN
-F 3 "~" H 1950 6800 50  0001 C CNN
-	1    1950 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5D8C497E
-P 1500 6150
-F 0 "R14" H 1570 6196 50  0000 L CNN
-F 1 "10K" H 1570 6105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 1430 6150 50  0001 C CNN
-F 3 "~" H 1500 6150 50  0001 C CNN
-	1    1500 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 7000 1950 7000
-Wire Wire Line
-	1500 7000 1500 6900
-Connection ~ 2400 7000
-Wire Wire Line
-	2400 7000 2400 7150
-Wire Wire Line
-	1950 6950 1950 7000
-Connection ~ 1950 7000
-Wire Wire Line
-	1950 7000 1500 7000
-Wire Wire Line
-	1950 6550 1950 6600
-Wire Wire Line
-	1500 6300 1500 6350
-Wire Wire Line
-	1500 6350 1650 6350
-Wire Wire Line
-	1500 6350 1500 6500
-Connection ~ 1500 6350
-Wire Wire Line
-	2100 6600 1950 6600
-Connection ~ 1950 6600
-Wire Wire Line
-	1950 6600 1950 6650
-Wire Wire Line
-	1500 5700 1500 5950
-Wire Wire Line
-	1500 5950 1950 5950
-Wire Wire Line
-	1950 5950 1950 6150
-Wire Wire Line
-	1500 5950 1500 6000
-Connection ~ 1500 5950
 $Comp
 L Connector_Generic:Conn_01x14 J4
 U 1 1 5DAA928F
@@ -1199,17 +939,6 @@ Wire Wire Line
 	2450 2700 2850 2700
 Wire Wire Line
 	2450 2800 2850 2800
-$Comp
-L power:+5V #PWR013
-U 1 1 5D9CED50
-P 1500 5700
-F 0 "#PWR013" H 1500 5550 50  0001 C CNN
-F 1 "+5V" V 1500 5900 50  0000 C CNN
-F 2 "" H 1500 5700 50  0000 C CNN
-F 3 "" H 1500 5700 50  0000 C CNN
-	1    1500 5700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR06
 U 1 1 56D71AA9
@@ -1260,17 +989,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4504b.pdf" H 7750 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 4250 8300 4300
-$Comp
-L power:+24V #PWR0101
-U 1 1 5DD5AAA9
-P 1000 3450
-F 0 "#PWR0101" H 1000 3300 50  0001 C CNN
-F 1 "+24V" H 1015 3623 50  0000 C CNN
-F 2 "" H 1000 3450 50  0001 C CNN
-F 3 "" H 1000 3450 50  0001 C CNN
-	1    1000 3450
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5DD5C846
@@ -1361,16 +1079,83 @@ F 3 "~" H 5050 1200 50  0001 C CNN
 	1    5050 1200
 	0    -1   -1   0   
 $EndComp
+$Sheet
+S 2850 3500 750  1100
+U 5D7DFDC0
+F0 "Spindle_Power_Control" 50
+F1 "Spindle_Power_Control.sch" 50
+F2 "ext_gnd" I L 2850 4500 50 
+F3 "ext_sppwm" I L 2850 4100 50 
+F4 "ext_spena" I L 2850 3900 50 
+F5 "ext_vcc" I L 2850 3700 50 
+$EndSheet
 $Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5E115443
-P 1000 3450
-F 0 "#FLG0101" H 1000 3525 50  0001 C CNN
-F 1 "PWR_FLAG" V 1000 3577 50  0000 L CNN
-F 2 "" H 1000 3450 50  0001 C CNN
-F 3 "~" H 1000 3450 50  0001 C CNN
-	1    1000 3450
-	0    -1   -1   0   
+L power:GND #PWR0101
+U 1 1 5D7EDA10
+P 2550 3000
+F 0 "#PWR0101" H 2550 2750 50  0001 C CNN
+F 1 "GND" H 2555 2827 50  0000 C CNN
+F 2 "" H 2550 3000 50  0001 C CNN
+F 3 "" H 2550 3000 50  0001 C CNN
+	1    2550 3000
+	1    0    0    -1  
 $EndComp
-Connection ~ 1000 3450
+$Sheet
+S 2850 1400 750  1600
+U 5D7EDA29
+F0 "sheet5D7EDA0A" 50
+F1 "Debounce_x6.sch" 50
+F2 "VCC" I R 3600 1450 50 
+F3 "GND" I L 2850 2900 50 
+F4 "Xmin" O R 3600 1550 50 
+F5 "Xmax" O R 3600 1750 50 
+F6 "Ymin" O R 3600 1950 50 
+F7 "Ymax" O R 3600 2150 50 
+F8 "Zmin" O R 3600 2350 50 
+F9 "Zmax" O R 3600 2550 50 
+F10 "SWXmin-" I L 2850 1600 50 
+F11 "SWXmax+" I L 2850 1700 50 
+F12 "SWXmax-" I L 2850 1800 50 
+F13 "SWYmin+" I L 2850 1900 50 
+F14 "SWYmin-" I L 2850 2000 50 
+F15 "SWYmax+" I L 2850 2100 50 
+F16 "SWYmax-" I L 2850 2200 50 
+F17 "SWZmin+" I L 2850 2300 50 
+F18 "SWZmin-" I L 2850 2400 50 
+F19 "SWZmax+" I L 2850 2500 50 
+F20 "SWZmax-" I L 2850 2600 50 
+F21 "SWXmin+" I L 2850 1500 50 
+F22 "SWProbe+" I L 2850 2700 50 
+F23 "SWProbe-" I L 2850 2800 50 
+F24 "Probe" O R 3600 2750 50 
+$EndSheet
+Text GLabel 4400 4100 0    50   Input ~ 0
+Probe
+Text GLabel 2450 3700 0    50   Input ~ 0
+VREF+
+Text GLabel 2450 3900 0    50   Input ~ 0
+spenab
+Text GLabel 2450 4100 0    50   Input ~ 0
+sppwm
+$Comp
+L power:GND #PWR01
+U 1 1 5D91A1FA
+P 2550 4600
+F 0 "#PWR01" H 2550 4350 50  0001 C CNN
+F 1 "GND" H 2555 4427 50  0000 C CNN
+F 2 "" H 2550 4600 50  0001 C CNN
+F 3 "" H 2550 4600 50  0001 C CNN
+	1    2550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4600 2550 4500
+Wire Wire Line
+	2550 4500 2850 4500
+Wire Wire Line
+	2450 4100 2850 4100
+Wire Wire Line
+	2450 3900 2850 3900
+Wire Wire Line
+	2450 3700 2850 3700
 $EndSCHEMATC
