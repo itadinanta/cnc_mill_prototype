@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -44,18 +44,18 @@ F 3 "~" H 5100 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C1
+L Device:CP1 C1
 U 1 1 5D7E3901
 P 5600 5300
 F 0 "C1" H 5692 5346 50  0000 L CNN
 F 1 "100u" H 5692 5255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5600 5300 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5600 5300 50  0001 C CNN
 F 3 "~" H 5600 5300 50  0001 C CNN
 	1    5600 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 5200 5600 5000
+	5600 5150 5600 5000
 $Comp
 L Transistor_FET:IRLZ44N Q?
 U 1 1 5D7E3908
@@ -114,7 +114,7 @@ U 1 1 5D7E3933
 P 3150 6250
 F 0 "R1" H 3220 6296 50  0000 L CNN
 F 1 "220" H 3220 6205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3080 6250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3080 6250 50  0001 C CNN
 F 3 "~" H 3150 6250 50  0001 C CNN
 	1    3150 6250
 	0    1    1    0   
@@ -127,24 +127,13 @@ U 1 1 5D7E393B
 P 4700 6700
 F 0 "R2" H 4770 6746 50  0000 L CNN
 F 1 "1.5K" H 4770 6655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4630 6700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4630 6700 50  0001 C CNN
 F 3 "~" H 4700 6700 50  0001 C CNN
 	1    4700 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3300 6250 3350 6250
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5D7E3942
-P 6200 5250
-F 0 "J1" H 6172 5224 50  0000 R CNN
-F 1 "Spindle_Power" H 6172 5133 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 5250 50  0001 C CNN
-F 3 "~" H 6200 5250 50  0001 C CNN
-	1    6200 5250
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 5600 5600 5600
 Wire Wire Line
@@ -152,7 +141,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 5500 5100 5600
 Wire Wire Line
-	5600 5400 5600 5600
+	5600 5450 5600 5600
 Connection ~ 5600 5600
 Wire Wire Line
 	5100 5000 5600 5000
@@ -181,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3950 3300 4050
 Wire Wire Line
-	5100 5000 3400 5000
+	5100 5000 4200 5000
 Wire Wire Line
 	3400 5000 3400 4650
 Connection ~ 5100 5000
@@ -213,7 +202,7 @@ U 1 1 5D8B9F62
 P 4700 7200
 F 0 "R16" H 4770 7246 50  0000 L CNN
 F 1 "1K" H 4770 7155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4630 7200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4630 7200 50  0001 C CNN
 F 3 "~" H 4700 7200 50  0001 C CNN
 	1    4700 7200
 	1    0    0    -1  
@@ -231,9 +220,6 @@ Wire Wire Line
 Wire Wire Line
 	3950 6250 4200 6250
 Wire Wire Line
-	4200 6250 4200 3950
-Connection ~ 4200 3950
-Wire Wire Line
 	2400 5200 2400 7500
 Connection ~ 2400 7500
 Wire Wire Line
@@ -244,7 +230,7 @@ U 1 1 5D8D8779
 P 2200 5000
 F 0 "R17" H 2270 5046 50  0000 L CNN
 F 1 "220" H 2270 4955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2130 5000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2130 5000 50  0001 C CNN
 F 3 "~" H 2200 5000 50  0001 C CNN
 	1    2200 5000
 	0    1    1    0   
@@ -259,4 +245,20 @@ Wire Wire Line
 Connection ~ 3350 7500
 Wire Wire Line
 	3000 5200 3000 7500
+Wire Wire Line
+	4200 6250 4200 5000
+Connection ~ 4200 5000
+Wire Wire Line
+	4200 5000 3400 5000
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5D7E3942
+P 6200 5350
+F 0 "J1" H 6172 5324 50  0000 R CNN
+F 1 "Spindle_Power" H 6172 5233 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00276_1x02_P5.00mm_Vertical" H 6200 5350 50  0001 C CNN
+F 3 "~" H 6200 5350 50  0001 C CNN
+	1    6200 5350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
