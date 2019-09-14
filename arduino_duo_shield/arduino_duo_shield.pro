@@ -1,4 +1,4 @@
-update=Sun Sep  8 14:52:30 2019
+update=Sat Sep 14 17:12:07 2019
 version=1
 last_client=kicad
 [cvpcb]
@@ -9,6 +9,16 @@ version=1
 [eeschema]
 version=1
 LibDir=
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=plot/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Spice
+SpiceAjustPassiveValues=1
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -25,8 +35,8 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.25
-ViaDiameter1=0.6
+TrackWidth1=0.6
+ViaDiameter1=0.7
 ViaDrill1=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
@@ -54,7 +64,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -225,6 +235,17 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.2
+TrackWidth=0.6
+ViaDiameter=0.7
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=Thin
+Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.6
 ViaDrill=0.4
@@ -233,13 +254,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=plot/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Spice
-SpiceAjustPassiveValues=1
-LabSize=50
-ERC_TestSimilarLabels=1

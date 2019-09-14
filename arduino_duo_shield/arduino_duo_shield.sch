@@ -1099,45 +1099,32 @@ F24 "Probe" O R 6700 4550 50
 $EndSheet
 Text GLabel 1350 4100 0    50   Input ~ 0
 Probe
-Text GLabel 4700 5600 0    50   Input ~ 0
+Text GLabel 4900 5500 0    50   Input ~ 0
 spenab
-Text GLabel 4700 5700 0    50   Input ~ 0
+Text GLabel 4900 5600 0    50   Input ~ 0
 sppwm
 $Comp
 L power:GND #PWR01
 U 1 1 5D91A1FA
-P 4700 5900
-F 0 "#PWR01" H 4700 5650 50  0001 C CNN
-F 1 "GND" H 4705 5727 50  0000 C CNN
-F 2 "" H 4700 5900 50  0001 C CNN
-F 3 "" H 4700 5900 50  0001 C CNN
-	1    4700 5900
+P 4350 5900
+F 0 "#PWR01" H 4350 5650 50  0001 C CNN
+F 1 "GND" H 4355 5727 50  0000 C CNN
+F 2 "" H 4350 5900 50  0001 C CNN
+F 3 "" H 4350 5900 50  0001 C CNN
+	1    4350 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5600 5600 5950 5600
-Wire Wire Line
-	5600 5500 5950 5500
-$Comp
-L Connector:Conn_01x04_Female J5
-U 1 1 5D974B94
-P 5400 5600
-F 0 "J5" H 5292 5885 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 5292 5794 50  0000 C CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00278_1x04_P5.00mm_Vertical" H 5400 5600 50  0001 C CNN
-F 3 "~" H 5400 5600 50  0001 C CNN
-	1    5400 5600
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5D975AD3
-P 5100 5600
-F 0 "J2" H 5072 5574 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 5072 5483 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5100 5600 50  0001 C CNN
-F 3 "~" H 5100 5600 50  0001 C CNN
-	1    5100 5600
+P 5300 5600
+F 0 "J2" H 5272 5574 50  0000 R CNN
+F 1 "Spindle_Control" H 5272 5483 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5300 5600 50  0001 C CNN
+F 3 "~" H 5300 5600 50  0001 C CNN
+	1    5300 5600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1145,25 +1132,13 @@ Wire Wire Line
 Wire Wire Line
 	5600 5800 5950 5800
 Wire Wire Line
-	4900 5800 4700 5800
+	5100 5800 4350 5800
 Wire Wire Line
-	4700 5800 4700 5900
+	4350 5800 4350 5900
 Wire Wire Line
-	4900 5700 4700 5700
+	5100 5600 4900 5600
 Wire Wire Line
-	4900 5600 4700 5600
-Wire Wire Line
-	4900 5500 4700 5500
-$Sheet
-S 5950 5400 750  500 
-U 5D7DFDC0
-F0 "Spindle_Power_Control" 50
-F1 "Spindle_Power_Control.sch" 50
-F2 "ext_gnd" I L 5950 5800 50 
-F3 "ext_sppwm" I L 5950 5700 50 
-F4 "ext_spena" I L 5950 5600 50 
-F5 "ext_vcc" I L 5950 5500 50 
-$EndSheet
+	5100 5500 4900 5500
 Wire Wire Line
 	1500 5800 1250 5800
 Wire Wire Line
@@ -1181,13 +1156,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 1450 4350 1700
 Wire Wire Line
-	4350 1700 4700 1700
-Wire Wire Line
-	4700 5500 4700 1700
-Connection ~ 4700 1700
-Wire Wire Line
-	4700 1700 6900 1700
-Wire Wire Line
 	3700 1150 3700 1350
 Wire Wire Line
 	3700 1350 3800 1350
@@ -1195,4 +1163,45 @@ Wire Wire Line
 	4350 1450 4200 1450
 Text Label 4350 1450 0    50   ~ 0
 VREF+
+$Sheet
+S 5950 5400 750  500 
+U 5D7DFDC0
+F0 "Spindle_Power_Control" 50
+F1 "Spindle_Power_Control.sch" 50
+F2 "ext_gnd" I L 5950 5800 50 
+F3 "ext_sppwm" I L 5950 5600 50 
+F4 "ext_vcc" I L 5950 5700 50 
+F5 "ext_spenab" I L 5950 5500 50 
+$EndSheet
+Wire Wire Line
+	4350 1700 6900 1700
+Connection ~ 4350 1700
+Wire Wire Line
+	5100 5700 4350 5700
+Wire Wire Line
+	4350 5700 4350 1700
+Wire Wire Line
+	5600 5500 5950 5500
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5D974B94
+P 5400 5700
+F 0 "J5" H 5292 5985 50  0000 C CNN
+F 1 "Spindle_Relay_Power" H 5292 5894 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 5700 50  0001 C CNN
+F 3 "~" H 5400 5700 50  0001 C CNN
+	1    5400 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 5D89B5D7
+P 5400 5500
+F 0 "J6" H 5292 5785 50  0000 C CNN
+F 1 "Spindle_Signal" H 5292 5694 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 5500 50  0001 C CNN
+F 3 "~" H 5400 5500 50  0001 C CNN
+	1    5400 5500
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
