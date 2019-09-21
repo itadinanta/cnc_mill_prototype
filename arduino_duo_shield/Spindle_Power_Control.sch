@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -82,21 +82,17 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5350 4900 50  00
 	1    5350 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 6050 5050 5000
 $Comp
 L Device:R R1
 U 1 1 5D7E3933
-P 4850 4800
-F 0 "R1" H 4920 4846 50  0000 L CNN
-F 1 "220" H 4920 4755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4780 4800 50  0001 C CNN
-F 3 "~" H 4850 4800 50  0001 C CNN
-	1    4850 4800
-	0    1    1    0   
+P 3900 4800
+F 0 "R1" H 3970 4846 50  0000 L CNN
+F 1 "220" H 3970 4755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3830 4800 50  0001 C CNN
+F 3 "~" H 3900 4800 50  0001 C CNN
+	1    3900 4800
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	4700 4800 3550 4800
 $Comp
 L Device:R R2
 U 1 1 5D7E393B
@@ -108,8 +104,6 @@ F 3 "~" H 5900 5250 50  0001 C CNN
 	1    5900 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 4800 5050 4800
 Wire Wire Line
 	6300 4150 6650 4150
 Wire Wire Line
@@ -128,12 +122,12 @@ Wire Wire Line
 	6650 3550 7050 3550
 Wire Wire Line
 	5500 2500 5500 2700
-Text HLabel 3550 6050 0    50   Input ~ 0
+Text HLabel 3550 5000 0    50   Input ~ 0
 ext_gnd
 Text HLabel 3550 4800 0    50   Input ~ 0
 ext_sppwm
 Wire Wire Line
-	3550 6050 4100 6050
+	3550 5000 4100 5000
 Text HLabel 3550 3550 0    50   Input ~ 0
 ext_spenab
 Text HLabel 3550 2500 0    50   Input ~ 0
@@ -152,13 +146,10 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4400 3650 50  00
 	1    4400 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 4700 6050
 Wire Wire Line
 	6300 5700 6300 6050
 Wire Wire Line
 	5900 5000 5900 5100
-Wire Wire Line
-	4700 6050 5050 6050
 $Comp
 L Device:R R16
 U 1 1 5D8B9F62
@@ -180,10 +171,8 @@ Wire Wire Line
 Wire Wire Line
 	5650 4800 5900 4800
 Wire Wire Line
-	4100 3750 4100 6050
-Connection ~ 4100 6050
-Wire Wire Line
-	4100 6050 4700 6050
+	4100 3750 4100 5000
+Connection ~ 4100 5000
 $Comp
 L Device:R R17
 U 1 1 5D8D8779
@@ -203,8 +192,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 5000 5900 5000
 Wire Wire Line
-	4700 3750 4700 4800
-Wire Wire Line
 	5900 4800 5900 3550
 Connection ~ 5900 3550
 $Comp
@@ -218,8 +205,6 @@ F 3 "~" H 7250 3900 50  0001 C CNN
 	1    7250 3900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4700 3550 5050 3550
 $Comp
 L pspice:DIODE D2
 U 1 1 5D88A789
@@ -357,13 +342,60 @@ Wire Wire Line
 Wire Wire Line
 	5900 3550 6300 3550
 Wire Wire Line
-	3550 2500 5050 2500
+	3550 2500 4700 2500
 Connection ~ 5050 3550
 Wire Wire Line
 	5050 3550 5500 3550
 Text Label 6900 2600 0    50   ~ 0
 MOTOR_GND
-Connection ~ 4700 4800
+$Comp
+L Transistor_FET:2N7000 Q1
+U 1 1 5D7E4BFC
+P 4950 3750
+F 0 "Q1" H 5156 3796 50  0000 L CNN
+F 1 "2N7000" H 5156 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5150 3675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4950 3750 50  0001 L CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4700 4800 4700 6050
+	4700 3750 4750 3750
+$Comp
+L Device:R R18
+U 1 1 5D7E83DD
+P 4700 4150
+F 0 "R18" H 4770 4196 50  0000 L CNN
+F 1 "10K" H 4770 4105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4630 4150 50  0001 C CNN
+F 3 "~" H 4700 4150 50  0001 C CNN
+	1    4700 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 5000 4700 5000
+Wire Wire Line
+	4700 3750 4700 4000
+Connection ~ 4700 3750
+Connection ~ 4700 5000
+Wire Wire Line
+	4700 5000 5050 5000
+Wire Wire Line
+	4700 4300 4700 4550
+Wire Wire Line
+	3550 4800 3750 4800
+Wire Wire Line
+	4050 4800 5050 4800
+Wire Wire Line
+	5050 3950 5050 4550
+Wire Wire Line
+	5050 4550 4700 4550
+Connection ~ 4700 4550
+Wire Wire Line
+	4700 4550 4700 5000
+Wire Wire Line
+	4700 2500 4700 3550
+Connection ~ 4700 2500
+Wire Wire Line
+	4700 2500 5050 2500
 $EndSCHEMATC
