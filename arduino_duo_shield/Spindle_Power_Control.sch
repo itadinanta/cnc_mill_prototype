@@ -27,11 +27,11 @@ F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 6350 2850 50  0001 L C
 $EndComp
 NoConn ~ 5800 2700
 Wire Wire Line
-	6300 3650 6300 3550
+	6300 3700 6300 3550
 Wire Wire Line
 	4050 3550 4100 3550
 $Comp
-L pspice:DIODE D1
+L Device:D_ALT D1
 U 1 1 5D7E38FB
 P 6300 3850
 F 0 "D1" V 6346 3722 50  0000 R CNN
@@ -39,7 +39,7 @@ F 1 "1N4007" V 6255 3722 50  0000 R CNN
 F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 6300 3850 50  0001 C CNN
 F 3 "~" H 6300 3850 50  0001 C CNN
 	1    6300 3850
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:CP1 C1
@@ -109,7 +109,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 3900 7050 4150
 Wire Wire Line
-	6300 4050 6300 4150
+	6300 4000 6300 4150
 Wire Wire Line
 	6650 4000 6650 4150
 Connection ~ 6650 4150
@@ -206,7 +206,7 @@ F 3 "~" H 7250 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pspice:DIODE D2
+L Device:D_ALT D2
 U 1 1 5D88A789
 P 5050 3000
 F 0 "D2" V 5096 2872 50  0000 R CNN
@@ -214,12 +214,12 @@ F 1 "1N4007" V 5005 2872 50  0000 R CNN
 F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5050 3000 50  0001 C CNN
 F 3 "~" H 5050 3000 50  0001 C CNN
 	1    5050 3000
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5050 2500 5050 2800
+	5050 2500 5050 2850
 Wire Wire Line
-	5050 3200 5050 3550
+	5050 3150 5050 3550
 $Comp
 L Connector:Conn_01x02_Male J7
 U 1 1 5D8C8CE6
@@ -398,4 +398,5 @@ Wire Wire Line
 Connection ~ 4700 2500
 Wire Wire Line
 	4700 2500 5050 2500
+NoConn ~ 7350 1500
 $EndSCHEMATC
