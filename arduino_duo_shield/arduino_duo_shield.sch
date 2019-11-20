@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date "mar. 31 mars 2015"
 Rev ""
@@ -1137,4 +1137,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 950  1600 2700
 NoConn ~ 1600 950 
+$Sheet
+S 6050 6200 750  550 
+U 5DD17641
+F0 "Spindle_VFD_Control" 50
+F1 "Spindle_VFD_Control.sch" 50
+$EndSheet
 $EndSCHEMATC

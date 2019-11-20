@@ -1,0 +1,143 @@
+EESchema Schematic File Version 4
+LIBS:RLC-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:0 #GND01
+U 1 1 5DD1DAB0
+P 4250 4900
+F 0 "#GND01" H 4250 4800 50  0001 C CNN
+F 1 "0" H 4250 4989 50  0000 C CNN
+F 2 "" H 4250 4900 50  0001 C CNN
+F 3 "~" H 4250 4900 50  0001 C CNN
+	1    4250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 5DD1DEF4
+P 4250 4100
+F 0 "C1" H 4428 4146 50  0000 L CNN
+F 1 "100u" H 4428 4055 50  0000 L CNN
+F 2 "" H 4250 4100 50  0001 C CNN
+F 3 "~" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VPULSE V1
+U 1 1 5DD1E8A1
+P 2200 3350
+F 0 "V1" H 2330 3441 50  0000 L CNN
+F 1 "VPULSE" H 2330 3350 50  0000 L CNN
+F 2 "" H 2200 3350 50  0001 C CNN
+F 3 "~" H 2200 3350 50  0001 C CNN
+F 4 "Y" H 2200 3350 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2200 3350 50  0001 L CNN "Spice_Primitive"
+F 6 "pulse(0 12 0 1u 1u 0.75m 1m 100)" H 2330 3259 50  0000 L CNN "Spice_Model"
+	1    2200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R1
+U 1 1 5DD1EC02
+P 4250 2350
+F 0 "R1" H 4318 2396 50  0000 L CNN
+F 1 "330" H 4318 2305 50  0000 L CNN
+F 2 "" H 4250 2350 50  0001 C CNN
+F 3 "~" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4900 4250 4550
+Wire Wire Line
+	4250 3850 4250 3500
+Wire Wire Line
+	2200 1550 2200 2950
+Wire Wire Line
+	2200 4550 2200 3550
+Connection ~ 4250 4550
+Wire Wire Line
+	4250 4550 4250 4350
+Wire Wire Line
+	4250 3500 4900 3500
+Connection ~ 4250 3500
+Text Label 5500 4050 0    50   ~ 0
+VOUT
+Wire Wire Line
+	2200 2950 1550 2950
+Connection ~ 2200 2950
+Wire Wire Line
+	2200 2950 2200 3150
+Text Label 1550 2950 0    50   ~ 0
+VIN
+Wire Wire Line
+	4250 2600 4250 2800
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5DD21FF3
+P 4250 3050
+F 0 "L1" V 4204 3128 50  0000 L CNN
+F 1 "1m" V 4295 3128 50  0000 L CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 3300 4250 3500
+Wire Wire Line
+	4250 1550 4250 2100
+Wire Wire Line
+	2200 1550 4250 1550
+Wire Wire Line
+	2200 4550 4250 4550
+$Comp
+L pspice:R R2
+U 1 1 5DD1B6FA
+P 4900 3750
+F 0 "R2" H 4968 3796 50  0000 L CNN
+F 1 "2k" H 4968 3705 50  0000 L CNN
+F 2 "" H 4900 3750 50  0001 C CNN
+F 3 "~" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 5200 3500
+$Comp
+L pspice:R R3
+U 1 1 5DD1C09F
+P 4900 4300
+F 0 "R3" H 4968 4346 50  0000 L CNN
+F 1 "10k" H 4968 4255 50  0000 L CNN
+F 2 "" H 4900 4300 50  0001 C CNN
+F 3 "~" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4550 4900 4550
+Connection ~ 4900 4550
+Wire Wire Line
+	4900 4550 5200 4550
+Wire Wire Line
+	4900 4000 4900 4050
+Wire Wire Line
+	4900 4050 5700 4050
+Connection ~ 4900 4050
+$EndSCHEMATC
