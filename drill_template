@@ -1,0 +1,72 @@
+{
+  "Output": "profile.ngc",
+  "Post": "grbl",
+  "PostArgs": "",
+  "SetupSheet": {
+    "ClearanceHeightExpression": "OpStockZMax+${SetupSheet}.ClearanceHeightOffset",
+    "ClearanceHeightOffset": "5.00 mm",
+    "Contour": {
+      "Direction": "CCW",
+      "JoinType": "Round"
+    },
+    "FinalDepthExpression": "OpFinalDepth",
+    "HorizRapid": "1000.00 mm/s",
+    "SafeHeightExpression": "OpStockZMax+${SetupSheet}.SafeHeightOffset",
+    "SafeHeightOffset": "3.00 mm",
+    "StartDepthExpression": "OpStartDepth",
+    "StepDownExpression": "0.4",
+    "VertRapid": "1000.00 mm/s"
+  },
+  "Stock": {
+    "create": "CreateBox",
+    "height": "5 mm",
+    "length": "250 mm",
+    "posX": -77.49999999999991,
+    "posY": -90.0,
+    "posZ": 0.0,
+    "rotW": 1.0,
+    "rotX": 0.0,
+    "rotY": 0.0,
+    "rotZ": 0.0,
+    "version": 1,
+    "width": "250 mm"
+  },
+  "Tolerance": "0.01",
+  "ToolController": [
+    {
+      "dir": "Forward",
+      "hfeed": "800 mm/s",
+      "hrapid": "1000 mm/s",
+      "label": "T3: AluminiumMill",
+      "name": "T3__AluminiumMill",
+      "nr": 3,
+      "speed": 17000.0,
+      "tool": {
+        "cornerRadius": 0.0,
+        "cuttingEdgeAngle": 180.0,
+        "cuttingEdgeHeight": 12.0,
+        "diameter": 3.0,
+        "flatRadius": 0.0,
+        "lengthOffset": 0.0,
+        "material": "Carbide",
+        "name": "AluminiumMill",
+        "tooltype": "Undefined",
+        "version": 1
+      },
+      "version": 1,
+      "vfeed": "500 mm/s",
+      "vrapid": "1000 mm/s",
+      "xengine": [
+        {
+          "expr": "${SetupSheet}.HorizRapid",
+          "prop": "HorizRapid"
+        },
+        {
+          "expr": "${SetupSheet}.VertRapid",
+          "prop": "VertRapid"
+        }
+      ]
+    }
+  ],
+  "Version": 1
+}
