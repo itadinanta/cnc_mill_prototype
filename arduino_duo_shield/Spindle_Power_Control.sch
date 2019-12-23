@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:arduino_duo_shield-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -88,7 +87,7 @@ U 1 1 5D7E3933
 P 3900 4800
 F 0 "R1" H 3970 4846 50  0000 L CNN
 F 1 "220" H 3970 4755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3830 4800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3830 4800 50  0001 C CNN
 F 3 "~" H 3900 4800 50  0001 C CNN
 	1    3900 4800
 	0    1    -1   0   
@@ -99,7 +98,7 @@ U 1 1 5D7E393B
 P 5900 5250
 F 0 "R2" H 5970 5296 50  0000 L CNN
 F 1 "1.3K" H 5970 5205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5830 5250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5830 5250 50  0001 C CNN
 F 3 "~" H 5900 5250 50  0001 C CNN
 	1    5900 5250
 	1    0    0    -1  
@@ -156,7 +155,7 @@ U 1 1 5D8B9F62
 P 5900 5750
 F 0 "R16" H 5970 5796 50  0000 L CNN
 F 1 "1K" H 5970 5705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5830 5750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5830 5750 50  0001 C CNN
 F 3 "~" H 5900 5750 50  0001 C CNN
 	1    5900 5750
 	1    0    0    -1  
@@ -179,7 +178,7 @@ U 1 1 5D8D8779
 P 3900 3550
 F 0 "R17" H 3970 3596 50  0000 L CNN
 F 1 "100" H 3970 3505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3830 3550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3830 3550 50  0001 C CNN
 F 3 "~" H 3900 3550 50  0001 C CNN
 	1    3900 3550
 	0    1    1    0   
@@ -367,7 +366,7 @@ U 1 1 5D7E83DD
 P 4700 4150
 F 0 "R18" H 4770 4196 50  0000 L CNN
 F 1 "10K" H 4770 4105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4630 4150 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4630 4150 50  0001 C CNN
 F 3 "~" H 4700 4150 50  0001 C CNN
 	1    4700 4150
 	-1   0    0    1   
@@ -398,5 +397,4 @@ Wire Wire Line
 Connection ~ 4700 2500
 Wire Wire Line
 	4700 2500 5050 2500
-NoConn ~ 7350 1500
 $EndSCHEMATC

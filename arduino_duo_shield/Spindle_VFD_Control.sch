@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:arduino_duo_shield-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,68 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 1300 2900 0    60   ~ 0
-Holes
-$Comp
-L Connector_Generic:Conn_01x01 P?
-U 1 1 5DD5BB6B
-P 1200 2550
-AR Path="/5DD5BB6B" Ref="P?"  Part="1" 
-AR Path="/5D7DFDC0/5DD5BB6B" Ref="P?"  Part="1" 
-AR Path="/5DD17641/5DD5BB6B" Ref="P18"  Part="1" 
-F 0 "P18" V 1300 2550 31  0000 C CNN
-F 1 "CONN_01X01" V 1300 2550 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1200 2550 50  0001 C CNN
-F 3 "" H 1200 2550 50  0000 C CNN
-	1    1200 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P?
-U 1 1 5DD5BB71
-P 1300 2550
-AR Path="/5DD5BB71" Ref="P?"  Part="1" 
-AR Path="/5D7DFDC0/5DD5BB71" Ref="P?"  Part="1" 
-AR Path="/5DD17641/5DD5BB71" Ref="P19"  Part="1" 
-F 0 "P19" V 1400 2550 31  0000 C CNN
-F 1 "CONN_01X01" V 1400 2550 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1300 2550 50  0001 C CNN
-F 3 "" H 1300 2550 50  0000 C CNN
-	1    1300 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P?
-U 1 1 5DD5BB77
-P 1400 2550
-AR Path="/5DD5BB77" Ref="P?"  Part="1" 
-AR Path="/5D7DFDC0/5DD5BB77" Ref="P?"  Part="1" 
-AR Path="/5DD17641/5DD5BB77" Ref="P20"  Part="1" 
-F 0 "P20" V 1500 2550 31  0000 C CNN
-F 1 "CONN_01X01" V 1500 2550 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1400 2550 50  0001 C CNN
-F 3 "" H 1400 2550 50  0000 C CNN
-	1    1400 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P?
-U 1 1 5DD5BB7D
-P 1500 2550
-AR Path="/5DD5BB7D" Ref="P?"  Part="1" 
-AR Path="/5D7DFDC0/5DD5BB7D" Ref="P?"  Part="1" 
-AR Path="/5DD17641/5DD5BB7D" Ref="P21"  Part="1" 
-F 0 "P21" V 1600 2550 31  0000 C CNN
-F 1 "CONN_01X01" V 1600 2550 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1500 2550 50  0001 C CNN
-F 3 "" H 1500 2550 50  0000 C CNN
-	1    1500 2550
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 1200 2750
-NoConn ~ 1300 2750
-NoConn ~ 1400 2750
-NoConn ~ 1500 2750
 Text HLabel 6250 800  2    50   Input ~ 0
 inverter_12V
 $Comp
@@ -101,7 +38,7 @@ AR Path="/5D7DFDC0/5DD6EE33" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DD6EE33" Ref="R23"  Part="1" 
 F 0 "R23" H 5120 2046 50  0000 L CNN
 F 1 "330" H 5120 1955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4980 2000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4980 2000 50  0001 C CNN
 F 3 "~" H 5050 2000 50  0001 C CNN
 	1    5050 2000
 	-1   0    0    -1  
@@ -112,7 +49,7 @@ U 1 1 5DD76DE3
 P 5050 2400
 F 0 "L1" H 5102 2446 50  0000 L CNN
 F 1 "1m" H 5102 2355 50  0000 L CNN
-F 2 "" H 5050 2400 50  0001 C CNN
+F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P10.16mm_Horizontal_Fastron_MICC" H 5050 2400 50  0001 C CNN
 F 3 "~" H 5050 2400 50  0001 C CNN
 	1    5050 2400
 	1    0    0    -1  
@@ -123,7 +60,7 @@ U 1 1 5DD77764
 P 5050 3050
 F 0 "C8" H 5168 3096 50  0000 L CNN
 F 1 "100u" H 5168 3005 50  0000 L CNN
-F 2 "" H 5088 2900 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5088 2900 50  0001 C CNN
 F 3 "~" H 5050 3050 50  0001 C CNN
 	1    5050 3050
 	-1   0    0    -1  
@@ -153,7 +90,7 @@ AR Path="/5D7DFDC0/5DD63534" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DD63534" Ref="R21"  Part="1" 
 F 0 "R21" H 4120 1346 50  0000 L CNN
 F 1 "10K" H 4120 1255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3980 1300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 1300 50  0001 C CNN
 F 3 "~" H 4050 1300 50  0001 C CNN
 	1    4050 1300
 	-1   0    0    -1  
@@ -172,7 +109,7 @@ AR Path="/5D7DFDC0/5DD5BB00" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DD5BB00" Ref="R15"  Part="1" 
 F 0 "R15" H 2370 3346 50  0000 L CNN
 F 1 "220" H 2370 3255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2230 3300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2230 3300 50  0001 C CNN
 F 3 "~" H 2300 3300 50  0001 C CNN
 	1    2300 3300
 	0    -1   -1   0   
@@ -238,7 +175,7 @@ U 1 1 5DE35CE7
 P 5700 3050
 F 0 "RV1" H 5631 3096 50  0000 R CNN
 F 1 "100K" H 5631 3005 50  0000 R CNN
-F 2 "" H 5700 3050 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 5700 3050 50  0001 C CNN
 F 3 "~" H 5700 3050 50  0001 C CNN
 	1    5700 3050
 	1    0    0    -1  
@@ -253,7 +190,7 @@ U 1 1 5DE3902E
 P 5350 800
 F 0 "D5" H 5350 1016 50  0000 C CNN
 F 1 "1N4007" H 5350 925 50  0000 C CNN
-F 2 "" H 5350 800 50  0001 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5350 800 50  0001 C CNN
 F 3 "~" H 5350 800 50  0001 C CNN
 	1    5350 800 
 	1    0    0    -1  
@@ -304,7 +241,7 @@ AR Path="/5D7DFDC0/5DE4EF5E" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DE4EF5E" Ref="R22"  Part="1" 
 F 0 "R22" H 2370 4796 50  0000 L CNN
 F 1 "220" H 2370 4705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2230 4750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2230 4750 50  0001 C CNN
 F 3 "~" H 2300 4750 50  0001 C CNN
 	1    2300 4750
 	0    -1   -1   0   
@@ -361,7 +298,7 @@ AR Path="/5D7DFDC0/5DE4EF7A" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DE4EF7A" Ref="R25"  Part="1" 
 F 0 "R25" H 3320 5246 50  0000 L CNN
 F 1 "10K" H 3320 5155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3180 5200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3180 5200 50  0001 C CNN
 F 3 "~" H 3250 5200 50  0001 C CNN
 	1    3250 5200
 	0    -1   1    0   
@@ -416,7 +353,7 @@ AR Path="/5D7DFDC0/5DE55540" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DE55540" Ref="R24"  Part="1" 
 F 0 "R24" H 2370 6196 50  0000 L CNN
 F 1 "220" H 2370 6105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2230 6150 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2230 6150 50  0001 C CNN
 F 3 "~" H 2300 6150 50  0001 C CNN
 	1    2300 6150
 	0    -1   -1   0   
@@ -471,7 +408,7 @@ AR Path="/5D7DFDC0/5DE5555C" Ref="R?"  Part="1"
 AR Path="/5DD17641/5DE5555C" Ref="R26"  Part="1" 
 F 0 "R26" H 3320 6646 50  0000 L CNN
 F 1 "10K" H 3320 6555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3180 6600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3180 6600 50  0001 C CNN
 F 3 "~" H 3250 6600 50  0001 C CNN
 	1    3250 6600
 	0    -1   1    0   
@@ -522,7 +459,7 @@ Wire Wire Line
 	4050 3300 3100 3300
 Connection ~ 4050 2500
 Wire Wire Line
-	4300 6100 4300 6600
+	4300 6100 4300 6250
 Wire Wire Line
 	4300 6600 3450 6600
 Connection ~ 3450 6600
@@ -530,19 +467,65 @@ Wire Wire Line
 	4300 6600 5700 6600
 Connection ~ 4300 6600
 Wire Wire Line
-	3450 5200 5700 5200
-Wire Wire Line
 	5700 5200 5700 6600
 Connection ~ 3450 5200
 Connection ~ 5700 6600
 Wire Wire Line
 	5700 6600 6250 6600
 Wire Wire Line
-	4400 4700 4400 5500
-Wire Wire Line
 	3450 5450 3450 5650
 Wire Wire Line
 	5700 3500 5700 5200
 Connection ~ 5700 3500
 Connection ~ 5700 5200
+Wire Wire Line
+	4400 4700 4400 4800
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5E3ED52D
+P 4400 5350
+F 0 "JP2" V 4354 5424 50  0000 L CNN
+F 1 "Jumper_NC_Small" V 4445 5424 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4400 5350 50  0001 C CNN
+F 3 "~" H 4400 5350 50  0001 C CNN
+	1    4400 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 5450 4400 5500
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5E3EDC9D
+P 4300 6350
+F 0 "JP1" V 4254 6424 50  0000 L CNN
+F 1 "Jumper_NC_Small" V 4345 6424 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4300 6350 50  0001 C CNN
+F 3 "~" H 4300 6350 50  0001 C CNN
+	1    4300 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 6450 4300 6600
+Wire Wire Line
+	4200 4800 4400 4800
+Connection ~ 4400 4800
+Wire Wire Line
+	4400 4800 4400 5250
+Wire Wire Line
+	3450 5200 5700 5200
+Wire Wire Line
+	4200 5500 4200 5100
+Wire Wire Line
+	4200 4900 4200 4800
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 5E5C3601
+P 4200 5000
+F 0 "JP3" V 4154 5048 50  0000 L CNN
+F 1 "Jumper_NC_Small" V 4245 5048 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 5000 50  0001 C CNN
+F 3 "~" H 4200 5000 50  0001 C CNN
+	1    4200 5000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

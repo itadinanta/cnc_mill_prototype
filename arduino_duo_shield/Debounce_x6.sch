@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:arduino_duo_shield-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -131,7 +130,7 @@ AR Path="/5D93910E/5D93F13F" Ref="R1"  Part="1"
 AR Path="/5D7EDA29/5D93F13F" Ref="R13"  Part="1" 
 F 0 "R13" V 7304 3000 50  0000 C CNN
 F 1 "10K" V 7395 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 7500 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7500 3000 50  0001 C CNN
 F 3 "~" H 7500 3000 50  0001 C CNN
 	1    7500 3000
 	-1   0    0    1   
@@ -145,7 +144,7 @@ AR Path="/5D93910E/5D93F145" Ref="R7"  Part="1"
 AR Path="/5D7EDA29/5D93F145" Ref="R14"  Part="1" 
 F 0 "R14" V 7304 3400 50  0000 C CNN
 F 1 "10K" V 7395 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 7500 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7500 3400 50  0001 C CNN
 F 3 "~" H 7500 3400 50  0001 C CNN
 	1    7500 3400
 	-1   0    0    1   
@@ -268,7 +267,7 @@ AR Path="/5D93910E/5D99244F" Ref="R2"  Part="1"
 AR Path="/5D7EDA29/5D99244F" Ref="R11"  Part="1" 
 F 0 "R11" V 6804 3000 50  0000 C CNN
 F 1 "10K" V 6895 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 7000 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7000 3000 50  0001 C CNN
 F 3 "~" H 7000 3000 50  0001 C CNN
 	1    7000 3000
 	-1   0    0    1   
@@ -282,7 +281,7 @@ AR Path="/5D93910E/5D992455" Ref="R8"  Part="1"
 AR Path="/5D7EDA29/5D992455" Ref="R12"  Part="1" 
 F 0 "R12" V 6804 3400 50  0000 C CNN
 F 1 "10K" V 6895 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 7000 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7000 3400 50  0001 C CNN
 F 3 "~" H 7000 3400 50  0001 C CNN
 	1    7000 3400
 	-1   0    0    1   
@@ -325,7 +324,7 @@ AR Path="/5D93910E/5D993413" Ref="R3"  Part="1"
 AR Path="/5D7EDA29/5D993413" Ref="R9"  Part="1" 
 F 0 "R9" V 6304 3000 50  0000 C CNN
 F 1 "10K" V 6395 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6500 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6500 3000 50  0001 C CNN
 F 3 "~" H 6500 3000 50  0001 C CNN
 	1    6500 3000
 	-1   0    0    1   
@@ -339,7 +338,7 @@ AR Path="/5D93910E/5D993419" Ref="R9"  Part="1"
 AR Path="/5D7EDA29/5D993419" Ref="R10"  Part="1" 
 F 0 "R10" V 6304 3400 50  0000 C CNN
 F 1 "10K" V 6395 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6500 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6500 3400 50  0001 C CNN
 F 3 "~" H 6500 3400 50  0001 C CNN
 	1    6500 3400
 	-1   0    0    1   
@@ -384,7 +383,7 @@ AR Path="/5D93910E/5D9961D2" Ref="R4"  Part="1"
 AR Path="/5D7EDA29/5D9961D2" Ref="R7"  Part="1" 
 F 0 "R7" V 5804 3000 50  0000 C CNN
 F 1 "10K" V 5895 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6000 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6000 3000 50  0001 C CNN
 F 3 "~" H 6000 3000 50  0001 C CNN
 	1    6000 3000
 	-1   0    0    1   
@@ -398,7 +397,7 @@ AR Path="/5D93910E/5D9961D8" Ref="R10"  Part="1"
 AR Path="/5D7EDA29/5D9961D8" Ref="R8"  Part="1" 
 F 0 "R8" V 5804 3400 50  0000 C CNN
 F 1 "10K" V 5895 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6000 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6000 3400 50  0001 C CNN
 F 3 "~" H 6000 3400 50  0001 C CNN
 	1    6000 3400
 	-1   0    0    1   
@@ -443,7 +442,7 @@ AR Path="/5D93910E/5D99784D" Ref="R5"  Part="1"
 AR Path="/5D7EDA29/5D99784D" Ref="R5"  Part="1" 
 F 0 "R5" V 5304 3000 50  0000 C CNN
 F 1 "10K" V 5395 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5500 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5500 3000 50  0001 C CNN
 F 3 "~" H 5500 3000 50  0001 C CNN
 	1    5500 3000
 	-1   0    0    1   
@@ -457,7 +456,7 @@ AR Path="/5D93910E/5D997853" Ref="R11"  Part="1"
 AR Path="/5D7EDA29/5D997853" Ref="R6"  Part="1" 
 F 0 "R6" V 5304 3400 50  0000 C CNN
 F 1 "10K" V 5395 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5500 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5500 3400 50  0001 C CNN
 F 3 "~" H 5500 3400 50  0001 C CNN
 	1    5500 3400
 	-1   0    0    1   
@@ -502,7 +501,7 @@ AR Path="/5D93910E/5D999528" Ref="R6"  Part="1"
 AR Path="/5D7EDA29/5D999528" Ref="R3"  Part="1" 
 F 0 "R3" V 4804 3000 50  0000 C CNN
 F 1 "10K" V 4895 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5000 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5000 3000 50  0001 C CNN
 F 3 "~" H 5000 3000 50  0001 C CNN
 	1    5000 3000
 	-1   0    0    1   
@@ -516,7 +515,7 @@ AR Path="/5D93910E/5D99952E" Ref="R12"  Part="1"
 AR Path="/5D7EDA29/5D99952E" Ref="R4"  Part="1" 
 F 0 "R4" V 4804 3400 50  0000 C CNN
 F 1 "10K" V 4895 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5000 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5000 3400 50  0001 C CNN
 F 3 "~" H 5000 3400 50  0001 C CNN
 	1    5000 3400
 	-1   0    0    1   
@@ -584,97 +583,97 @@ Wire Wire Line
 Wire Wire Line
 	4350 2800 4350 2900
 Connection ~ 5000 2800
-Text HLabel 7850 2500 1    50   Input ~ 0
+Text HLabel 9600 2500 1    50   Input ~ 0
 SWProbe-
-Text HLabel 8050 2500 1    50   Input ~ 0
+Text HLabel 9800 2500 1    50   Input ~ 0
 SWProbe+
-Text HLabel 8050 4800 3    50   Output ~ 0
+Text HLabel 9800 4800 3    50   Output ~ 0
 Probe
 Wire Wire Line
-	7500 4000 7850 4000
+	7500 4000 7900 4000
 Wire Wire Line
-	8050 3600 8050 4200
+	9800 3600 9800 4200
 Wire Wire Line
-	7850 2500 7850 4000
+	9600 2500 9600 4000
 Wire Wire Line
-	7950 3600 7950 3700
-Connection ~ 7950 3600
+	9700 3600 9700 3700
+Connection ~ 9700 3600
 Wire Wire Line
-	8050 3600 7950 3600
+	9800 3600 9700 3600
 Wire Wire Line
-	7950 3500 7950 3600
+	9700 3500 9700 3600
 Wire Wire Line
-	7950 3900 7950 4000
+	9700 3900 9700 4000
 $Comp
 L Device:R_Small R?
 U 1 1 5D831642
-P 7950 3000
+P 9700 3000
 AR Path="/5D831642" Ref="R?"  Part="1" 
 AR Path="/5D93910E/5D831642" Ref="R?"  Part="1" 
 AR Path="/5D7EDA29/5D831642" Ref="R19"  Part="1" 
-F 0 "R19" V 7754 3000 50  0000 C CNN
-F 1 "10K" V 7845 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 7950 3000 50  0001 C CNN
-F 3 "~" H 7950 3000 50  0001 C CNN
-	1    7950 3000
+F 0 "R19" V 9504 3000 50  0000 C CNN
+F 1 "10K" V 9595 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9700 3000 50  0001 C CNN
+F 3 "~" H 9700 3000 50  0001 C CNN
+	1    9700 3000
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5D831648
-P 7950 3400
+P 9700 3400
 AR Path="/5D831648" Ref="R?"  Part="1" 
 AR Path="/5D93910E/5D831648" Ref="R?"  Part="1" 
 AR Path="/5D7EDA29/5D831648" Ref="R20"  Part="1" 
-F 0 "R20" V 7754 3400 50  0000 C CNN
-F 1 "10K" V 7845 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 7950 3400 50  0001 C CNN
-F 3 "~" H 7950 3400 50  0001 C CNN
-	1    7950 3400
+F 0 "R20" V 9504 3400 50  0000 C CNN
+F 1 "10K" V 9595 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9700 3400 50  0001 C CNN
+F 3 "~" H 9700 3400 50  0001 C CNN
+	1    9700 3400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8050 2500 8050 3200
+	9800 2500 9800 3200
 Wire Wire Line
-	8050 3200 7950 3200
+	9800 3200 9700 3200
 $Comp
 L Device:C_Small C?
 U 1 1 5D831650
-P 7950 3800
+P 9700 3800
 AR Path="/5D831650" Ref="C?"  Part="1" 
 AR Path="/5D93910E/5D831650" Ref="C?"  Part="1" 
 AR Path="/5D7EDA29/5D831650" Ref="C9"  Part="1" 
-F 0 "C9" V 7721 3800 50  0000 C CNN
-F 1 "100p" V 7812 3800 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 7950 3800 50  0001 C CNN
-F 3 "~" H 7950 3800 50  0001 C CNN
-	1    7950 3800
+F 0 "C9" V 9471 3800 50  0000 C CNN
+F 1 "100p" V 9562 3800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9700 3800 50  0001 C CNN
+F 3 "~" H 9700 3800 50  0001 C CNN
+	1    9700 3800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7950 3200 7950 3300
-Connection ~ 7950 3200
+	9700 3200 9700 3300
+Connection ~ 9700 3200
 Wire Wire Line
-	7950 3200 7950 3100
+	9700 3200 9700 3100
 Wire Wire Line
-	7500 2800 7950 2800
+	7500 2800 8000 2800
 Wire Wire Line
-	7950 2800 7950 2900
-Connection ~ 7850 4000
+	9700 2800 9700 2900
+Connection ~ 9600 4000
 Wire Wire Line
-	7850 4000 7950 4000
+	9600 4000 9700 4000
 $Comp
 L 74xx:74HC14 U?
 U 1 1 5D83BB28
-P 8050 4500
+P 9800 4500
 AR Path="/5D83BB28" Ref="U?"  Part="1" 
 AR Path="/5D93910E/5D83BB28" Ref="U?"  Part="1" 
 AR Path="/5D7EDA29/5D83BB28" Ref="U6"  Part="1" 
-F 0 "U6" H 8050 4817 50  0000 C CNN
-F 1 "74HC14" H 8050 4726 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8050 4500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 8050 4500 50  0001 C CNN
-	1    8050 4500
+F 0 "U6" H 9800 4817 50  0000 C CNN
+F 1 "74HC14" H 9800 4726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9800 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 9800 4500 50  0001 C CNN
+	1    9800 4500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -729,4 +728,198 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6100 4500 50  0001 C CNN
 	1    6100 4500
 	0    1    1    0   
 $EndComp
+Connection ~ 8500 2800
+Connection ~ 8500 4000
+Wire Wire Line
+	8000 4000 7900 4000
+Connection ~ 8000 4000
+Wire Wire Line
+	8000 3900 8000 4000
+Wire Wire Line
+	8000 3600 8000 3700
+Connection ~ 8000 3600
+Wire Wire Line
+	8100 3600 8100 4200
+Wire Wire Line
+	8000 3600 8100 3600
+Connection ~ 7900 4000
+Wire Wire Line
+	8400 4000 8000 4000
+Wire Wire Line
+	8000 3500 8000 3600
+Wire Wire Line
+	8600 3600 8600 4200
+Wire Wire Line
+	8400 2500 8400 4000
+Wire Wire Line
+	8500 3600 8500 3700
+Connection ~ 8500 3600
+Wire Wire Line
+	8600 3600 8500 3600
+Wire Wire Line
+	8500 3500 8500 3600
+Connection ~ 8400 4000
+Wire Wire Line
+	8500 4000 8400 4000
+Wire Wire Line
+	8500 3900 8500 4000
+Wire Wire Line
+	7900 2500 7900 4000
+$Comp
+L Device:R_Small R?
+U 1 1 5E3E3831
+P 8500 3000
+AR Path="/5E3E3831" Ref="R?"  Part="1" 
+AR Path="/5D93910E/5E3E3831" Ref="R?"  Part="1" 
+AR Path="/5D7EDA29/5E3E3831" Ref="R29"  Part="1" 
+F 0 "R29" V 8304 3000 50  0000 C CNN
+F 1 "10K" V 8395 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8500 3000 50  0001 C CNN
+F 3 "~" H 8500 3000 50  0001 C CNN
+	1    8500 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E3E3837
+P 8500 3400
+AR Path="/5E3E3837" Ref="R?"  Part="1" 
+AR Path="/5D93910E/5E3E3837" Ref="R?"  Part="1" 
+AR Path="/5D7EDA29/5E3E3837" Ref="R30"  Part="1" 
+F 0 "R30" V 8304 3400 50  0000 C CNN
+F 1 "10K" V 8395 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8500 3400 50  0001 C CNN
+F 3 "~" H 8500 3400 50  0001 C CNN
+	1    8500 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 2500 8600 3200
+Wire Wire Line
+	8600 3200 8500 3200
+$Comp
+L Device:C_Small C?
+U 1 1 5E3E383F
+P 8500 3800
+AR Path="/5E3E383F" Ref="C?"  Part="1" 
+AR Path="/5D93910E/5E3E383F" Ref="C?"  Part="1" 
+AR Path="/5D7EDA29/5E3E383F" Ref="C11"  Part="1" 
+F 0 "C11" V 8271 3800 50  0000 C CNN
+F 1 "100p" V 8362 3800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8500 3800 50  0001 C CNN
+F 3 "~" H 8500 3800 50  0001 C CNN
+	1    8500 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 3200 8500 3300
+Connection ~ 8500 3200
+Wire Wire Line
+	8500 3200 8500 3100
+Wire Wire Line
+	8500 2900 8500 2800
+$Comp
+L 74xx:74HC14 U?
+U 2 1 5E3E3849
+P 8100 4500
+AR Path="/5E3E3849" Ref="U?"  Part="5" 
+AR Path="/5D93910E/5E3E3849" Ref="U?"  Part="5" 
+AR Path="/5D7EDA29/5E3E3849" Ref="U6"  Part="2" 
+F 0 "U6" H 8100 4817 50  0000 C CNN
+F 1 "74HC14" H 8100 4726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8100 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 8100 4500 50  0001 C CNN
+	2    8100 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74HC14 U?
+U 3 1 5E3E384F
+P 8600 4500
+AR Path="/5E3E384F" Ref="U?"  Part="6" 
+AR Path="/5D93910E/5E3E384F" Ref="U?"  Part="6" 
+AR Path="/5D7EDA29/5E3E384F" Ref="U6"  Part="3" 
+F 0 "U6" H 8600 4817 50  0000 C CNN
+F 1 "74HC14" H 8600 4726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8600 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 8600 4500 50  0001 C CNN
+	3    8600 4500
+	0    1    1    0   
+$EndComp
+Text HLabel 8600 4800 3    50   Output ~ 0
+Amin
+Text HLabel 8100 4800 3    50   Output ~ 0
+Amax
+Text HLabel 8400 2500 1    50   Input ~ 0
+SWAmin-
+$Comp
+L Device:R_Small R?
+U 1 1 5E3E3858
+P 8000 3000
+AR Path="/5E3E3858" Ref="R?"  Part="1" 
+AR Path="/5D93910E/5E3E3858" Ref="R?"  Part="1" 
+AR Path="/5D7EDA29/5E3E3858" Ref="R27"  Part="1" 
+F 0 "R27" V 7804 3000 50  0000 C CNN
+F 1 "10K" V 7895 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8000 3000 50  0001 C CNN
+F 3 "~" H 8000 3000 50  0001 C CNN
+	1    8000 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E3E385E
+P 8000 3400
+AR Path="/5E3E385E" Ref="R?"  Part="1" 
+AR Path="/5D93910E/5E3E385E" Ref="R?"  Part="1" 
+AR Path="/5D7EDA29/5E3E385E" Ref="R28"  Part="1" 
+F 0 "R28" V 7804 3400 50  0000 C CNN
+F 1 "10K" V 7895 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8000 3400 50  0001 C CNN
+F 3 "~" H 8000 3400 50  0001 C CNN
+	1    8000 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 2500 8100 3200
+Wire Wire Line
+	8100 3200 8000 3200
+$Comp
+L Device:C_Small C?
+U 1 1 5E3E3866
+P 8000 3800
+AR Path="/5E3E3866" Ref="C?"  Part="1" 
+AR Path="/5D93910E/5E3E3866" Ref="C?"  Part="1" 
+AR Path="/5D7EDA29/5E3E3866" Ref="C10"  Part="1" 
+F 0 "C10" V 7771 3800 50  0000 C CNN
+F 1 "100p" V 7862 3800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8000 3800 50  0001 C CNN
+F 3 "~" H 8000 3800 50  0001 C CNN
+	1    8000 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 3200 8000 3300
+Connection ~ 8000 3200
+Wire Wire Line
+	8000 3200 8000 3100
+Wire Wire Line
+	8000 2900 8000 2800
+Text HLabel 8100 2500 1    50   Input ~ 0
+SWAmax+
+Text HLabel 7900 2500 1    50   Input ~ 0
+SWAmax-
+Connection ~ 8000 2800
+Wire Wire Line
+	8000 2800 8500 2800
+Text HLabel 8600 2500 1    50   Input ~ 0
+SWAmin+
+Wire Wire Line
+	8500 4000 9600 4000
+Wire Wire Line
+	8500 2800 10700 2800
+Wire Wire Line
+	9600 4000 10600 4000
+Wire Wire Line
+	8500 2800 9700 2800
 $EndSCHEMATC

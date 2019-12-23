@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:arduino_duo_shield-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -377,12 +376,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 3700 1950 3700
 Wire Wire Line
-	1950 3800 1500 3800
-Wire Wire Line
-	1500 3900 1950 3900
-Wire Wire Line
-	1950 4000 1500 4000
-Wire Wire Line
 	3000 4000 2750 4000
 Wire Wire Line
 	2750 4100 3000 4100
@@ -480,35 +473,35 @@ Wire Wire Line
 Wire Wire Line
 	1250 6300 1250 6700
 Wire Wire Line
-	5950 4700 5650 4700
+	5950 4250 5650 4250
 Wire Wire Line
 	1700 1050 1700 1250
 $Comp
 L power:GND #PWR011
 U 1 1 5D826089
-P 8450 4800
-F 0 "#PWR011" H 8450 4550 50  0001 C CNN
-F 1 "GND" H 8455 4627 50  0000 C CNN
-F 2 "" H 8450 4800 50  0001 C CNN
-F 3 "" H 8450 4800 50  0001 C CNN
-	1    8450 4800
+P 8300 4800
+F 0 "#PWR011" H 8300 4550 50  0001 C CNN
+F 1 "GND" H 8305 4627 50  0000 C CNN
+F 2 "" H 8300 4800 50  0001 C CNN
+F 3 "" H 8300 4800 50  0001 C CNN
+	1    8300 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 5D86A755
-P 10800 5600
-F 0 "#PWR012" H 10800 5350 50  0001 C CNN
-F 1 "GND" H 10805 5427 50  0000 C CNN
-F 2 "" H 10800 5600 50  0001 C CNN
-F 3 "" H 10800 5600 50  0001 C CNN
-	1    10800 5600
+P 11100 6200
+F 0 "#PWR012" H 11100 5950 50  0001 C CNN
+F 1 "GND" H 11105 6027 50  0000 C CNN
+F 2 "" H 11100 6200 50  0001 C CNN
+F 3 "" H 11100 6200 50  0001 C CNN
+	1    11100 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1700 1250 1700 2600
 Wire Wire Line
-	9350 3400 10200 3400
+	9200 3400 9300 3400
 Text GLabel 3450 3600 2    50   Output ~ 0
 m1dir
 Text GLabel 3450 3500 2    50   Output ~ 0
@@ -571,29 +564,29 @@ Wire Wire Line
 	2600 5150 2600 5800
 Wire Wire Line
 	2600 6300 2600 6900
-Text GLabel 7900 3400 0    50   Input ~ 0
+Text GLabel 8000 3400 0    50   Input ~ 0
 m1enab
-Text GLabel 7900 3700 0    50   Input ~ 0
+Text GLabel 8000 3700 0    50   Input ~ 0
 m2enab
-Text GLabel 7900 4000 0    50   Input ~ 0
+Text GLabel 8000 4000 0    50   Input ~ 0
 m3enab
-Text GLabel 7900 4300 0    50   Input ~ 0
+Text GLabel 8000 4300 0    50   Input ~ 0
 m4enab
-Text GLabel 7900 3500 0    50   Input ~ 0
+Text GLabel 8000 3500 0    50   Input ~ 0
 m1dir
-Text GLabel 7900 3600 0    50   Input ~ 0
+Text GLabel 8000 3600 0    50   Input ~ 0
 m1step
-Text GLabel 7900 3800 0    50   Input ~ 0
+Text GLabel 8000 3800 0    50   Input ~ 0
 m2dir
-Text GLabel 7900 3900 0    50   Input ~ 0
+Text GLabel 8000 3900 0    50   Input ~ 0
 m2step
-Text GLabel 7900 4100 0    50   Input ~ 0
+Text GLabel 8000 4100 0    50   Input ~ 0
 m3dir
-Text GLabel 7900 4200 0    50   Input ~ 0
+Text GLabel 8000 4200 0    50   Input ~ 0
 m3step
-Text GLabel 7900 4400 0    50   Input ~ 0
+Text GLabel 8000 4400 0    50   Input ~ 0
 m4dir
-Text GLabel 7900 4500 0    50   Input ~ 0
+Text GLabel 8000 4500 0    50   Input ~ 0
 m4step
 Text GLabel 3500 4350 2    50   Input ~ 0
 Xmn
@@ -619,34 +612,34 @@ Wire Wire Line
 	2750 4750 3500 4750
 Wire Wire Line
 	2750 4850 3500 4850
-Text GLabel 7000 3350 2    50   Output ~ 0
+Text GLabel 7000 2500 2    50   Output ~ 0
 Xmn
-Text GLabel 7000 3550 2    50   Output ~ 0
+Text GLabel 7000 2700 2    50   Output ~ 0
 Xmx
-Text GLabel 7000 3750 2    50   Output ~ 0
+Text GLabel 7000 2900 2    50   Output ~ 0
 Ymn
-Text GLabel 7000 3950 2    50   Output ~ 0
+Text GLabel 7000 3100 2    50   Output ~ 0
 Ymx
-Text GLabel 7000 4150 2    50   Output ~ 0
+Text GLabel 7000 3300 2    50   Output ~ 0
 Zmn
-Text GLabel 7000 4350 2    50   Output ~ 0
+Text GLabel 7000 3500 2    50   Output ~ 0
 Zmx
 Wire Wire Line
-	6700 3350 7000 3350
+	6700 2500 7000 2500
 Wire Wire Line
-	6700 3550 7000 3550
+	6700 2700 7000 2700
 Wire Wire Line
-	6700 3750 7000 3750
+	6700 2900 7000 2900
 Wire Wire Line
-	6700 3950 7000 3950
+	6700 3100 7000 3100
 Wire Wire Line
-	6700 4150 7000 4150
+	6700 3300 7000 3300
 Wire Wire Line
-	6700 4350 7000 4350
-Text GLabel 7000 4550 2    50   Output ~ 0
+	6700 3500 7000 3500
+Text GLabel 7000 4100 2    50   Output ~ 0
 Probe
 Wire Wire Line
-	6700 4550 7000 4550
+	6700 4100 7000 4100
 Wire Wire Line
 	1350 4100 1950 4100
 Text GLabel 3450 2600 2    50   Output ~ 0
@@ -659,9 +652,6 @@ NoConn ~ 1500 3400
 NoConn ~ 1500 3500
 NoConn ~ 1500 3600
 NoConn ~ 1500 3700
-NoConn ~ 1500 3800
-NoConn ~ 1500 3900
-NoConn ~ 1500 4000
 NoConn ~ 1500 4350
 NoConn ~ 1500 4450
 NoConn ~ 1500 4550
@@ -702,7 +692,6 @@ NoConn ~ 3000 4000
 NoConn ~ 3000 2900
 NoConn ~ 3000 3000
 NoConn ~ 3000 2800
-NoConn ~ 3000 2500
 NoConn ~ 3000 2100
 NoConn ~ 3000 2200
 NoConn ~ 3000 2300
@@ -710,136 +699,123 @@ NoConn ~ 2900 6600
 NoConn ~ 1500 2150
 NoConn ~ 1850 2150
 Wire Wire Line
-	10200 3500 9350 3500
+	10500 3500 9400 3500
 Wire Wire Line
-	10200 3600 9350 3600
+	10500 3600 9500 3600
 Wire Wire Line
-	10200 4000 9350 4000
+	10500 4000 9900 4000
 Wire Wire Line
-	10200 4200 9350 4200
+	10500 4200 10100 4200
 Wire Wire Line
-	10200 4300 9350 4300
+	10500 4300 10200 4300
 Wire Wire Line
-	10200 4400 9350 4400
+	10500 4500 10400 4500
 Wire Wire Line
-	10200 4500 9350 4500
+	10500 4100 10000 4100
 Wire Wire Line
-	10200 4100 9350 4100
+	11000 3400 11100 3400
 Wire Wire Line
-	10700 3400 10800 3400
+	11100 3400 11100 3500
 Wire Wire Line
-	10800 3400 10800 3500
+	11100 4500 11000 4500
+Connection ~ 11100 4500
 Wire Wire Line
-	10800 4500 10700 4500
-Connection ~ 10800 4500
+	11100 4500 11100 4850
 Wire Wire Line
-	10800 4500 10800 5600
+	11000 4400 11100 4400
+Connection ~ 11100 4400
 Wire Wire Line
-	10700 4400 10800 4400
-Connection ~ 10800 4400
+	11100 4400 11100 4500
 Wire Wire Line
-	10800 4400 10800 4500
+	11000 4300 11100 4300
+Connection ~ 11100 4300
 Wire Wire Line
-	10700 4300 10800 4300
-Connection ~ 10800 4300
+	11100 4300 11100 4400
 Wire Wire Line
-	10800 4300 10800 4400
+	11000 4200 11100 4200
+Connection ~ 11100 4200
 Wire Wire Line
-	10700 4200 10800 4200
-Connection ~ 10800 4200
+	11100 4200 11100 4300
 Wire Wire Line
-	10800 4200 10800 4300
+	11000 4100 11100 4100
+Connection ~ 11100 4100
 Wire Wire Line
-	10700 4100 10800 4100
-Connection ~ 10800 4100
+	11100 4100 11100 4200
 Wire Wire Line
-	10800 4100 10800 4200
+	11000 4000 11100 4000
+Connection ~ 11100 4000
 Wire Wire Line
-	10700 4000 10800 4000
-Connection ~ 10800 4000
+	11100 4000 11100 4100
 Wire Wire Line
-	10800 4000 10800 4100
+	11000 3900 11100 3900
+Connection ~ 11100 3900
 Wire Wire Line
-	10700 3900 10800 3900
-Connection ~ 10800 3900
+	11100 3900 11100 4000
 Wire Wire Line
-	10800 3900 10800 4000
+	11000 3800 11100 3800
+Connection ~ 11100 3800
 Wire Wire Line
-	10700 3800 10800 3800
-Connection ~ 10800 3800
+	11100 3800 11100 3900
 Wire Wire Line
-	10800 3800 10800 3900
+	11000 3700 11100 3700
+Connection ~ 11100 3700
 Wire Wire Line
-	10700 3700 10800 3700
-Connection ~ 10800 3700
+	11100 3700 11100 3800
 Wire Wire Line
-	10800 3700 10800 3800
+	11000 3600 11100 3600
+Connection ~ 11100 3600
 Wire Wire Line
-	10700 3600 10800 3600
-Connection ~ 10800 3600
+	11100 3600 11100 3700
 Wire Wire Line
-	10800 3600 10800 3700
+	11000 3500 11100 3500
+Connection ~ 11100 3500
 Wire Wire Line
-	10700 3500 10800 3500
-Connection ~ 10800 3500
-Wire Wire Line
-	10800 3500 10800 3600
+	11100 3500 11100 3600
 $Comp
 L Connector_Generic:Conn_02x12_Odd_Even J3
 U 1 1 5E4D7194
-P 10400 3900
-F 0 "J3" H 10450 4617 50  0000 C CNN
-F 1 "Motor_Control" H 10450 4526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 10400 3900 50  0001 C CNN
-F 3 "~" H 10400 3900 50  0001 C CNN
-	1    10400 3900
+P 10700 3900
+F 0 "J3" H 10750 4617 50  0000 C CNN
+F 1 "Motor_Control" H 10750 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 10700 3900 50  0001 C CNN
+F 3 "~" H 10700 3900 50  0001 C CNN
+	1    10700 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 3700 10200 3700
+	9200 3700 9600 3700
 Wire Wire Line
-	10200 3900 9350 3900
+	10500 3900 9800 3900
 Wire Wire Line
-	10200 3800 9350 3800
-$Comp
-L Connector_Generic:Conn_01x14 J4
-U 1 1 5DAA928F
-P 5350 3900
-F 0 "J4" H 5268 4717 50  0000 C CNN
-F 1 "Limit_Switches" H 5268 4626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 5350 3900 50  0001 C CNN
-F 3 "~" H 5350 3900 50  0001 C CNN
-	1    5350 3900
-	-1   0    0    -1  
-$EndComp
+	10500 3800 9700 3800
 Wire Wire Line
-	5550 3300 5950 3300
+	5550 2450 5950 2450
 Wire Wire Line
-	5550 3400 5950 3400
+	5550 2550 5950 2550
 Wire Wire Line
-	5550 3500 5950 3500
+	5550 2650 5950 2650
 Wire Wire Line
-	5550 3600 5950 3600
+	5550 2750 5950 2750
 Wire Wire Line
-	5550 3700 5950 3700
+	5550 2850 5950 2850
 Wire Wire Line
-	5550 3800 5950 3800
+	5550 2950 5950 2950
 Wire Wire Line
-	5550 3900 5950 3900
+	5550 3050 5950 3050
 Wire Wire Line
-	5550 4000 5950 4000
+	5550 3150 5950 3150
 Wire Wire Line
-	5550 4100 5950 4100
+	5550 3250 5950 3250
 Wire Wire Line
-	5550 4200 5950 4200
+	5550 3350 5950 3350
 Wire Wire Line
-	5550 4300 5950 4300
+	5550 3450 5950 3450
 Wire Wire Line
-	5550 4400 5950 4400
+	5550 3550 5950 3550
 Wire Wire Line
-	5550 4500 5950 4500
+	5550 3650 5950 3650
 Wire Wire Line
-	5550 4600 5950 4600
+	5550 3750 5950 3750
 $Comp
 L power:+3V3 #PWR06
 U 1 1 56D71AA9
@@ -874,226 +850,191 @@ F 3 "" H 1250 6700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 4700 5650 4800
+	5650 4250 5650 4350
 Connection ~ 6900 1250
 Connection ~ 1700 1250
 $Comp
 L power:GND #PWR0101
 U 1 1 5D7EDA10
-P 5650 4800
-F 0 "#PWR0101" H 5650 4550 50  0001 C CNN
-F 1 "GND" H 5655 4627 50  0000 C CNN
-F 2 "" H 5650 4800 50  0001 C CNN
-F 3 "" H 5650 4800 50  0001 C CNN
-	1    5650 4800
+P 5650 4350
+F 0 "#PWR0101" H 5650 4100 50  0001 C CNN
+F 1 "GND" H 5655 4177 50  0000 C CNN
+F 2 "" H 5650 4350 50  0001 C CNN
+F 3 "" H 5650 4350 50  0001 C CNN
+	1    5650 4350
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5950 3200 750  1600
+S 5950 2350 750  2000
 U 5D7EDA29
 F0 "Debounce_x6" 50
 F1 "Debounce_x6.sch" 50
-F2 "VCC" I R 6700 3250 50 
-F3 "GND" I L 5950 4700 50 
-F4 "Xmin" O R 6700 3350 50 
-F5 "Xmax" O R 6700 3550 50 
-F6 "Ymin" O R 6700 3750 50 
-F7 "Ymax" O R 6700 3950 50 
-F8 "Zmin" O R 6700 4150 50 
-F9 "Zmax" O R 6700 4350 50 
-F10 "SWXmin-" I L 5950 3400 50 
-F11 "SWXmax+" I L 5950 3500 50 
-F12 "SWXmax-" I L 5950 3600 50 
-F13 "SWYmin+" I L 5950 3700 50 
-F14 "SWYmin-" I L 5950 3800 50 
-F15 "SWYmax+" I L 5950 3900 50 
-F16 "SWYmax-" I L 5950 4000 50 
-F17 "SWZmin+" I L 5950 4100 50 
-F18 "SWZmin-" I L 5950 4200 50 
-F19 "SWZmax+" I L 5950 4300 50 
-F20 "SWZmax-" I L 5950 4400 50 
-F21 "SWXmin+" I L 5950 3300 50 
-F22 "SWProbe+" I L 5950 4500 50 
-F23 "SWProbe-" I L 5950 4600 50 
-F24 "Probe" O R 6700 4550 50 
+F2 "VCC" I R 6700 2400 50 
+F3 "GND" I L 5950 4250 50 
+F4 "Xmin" O R 6700 2500 50 
+F5 "Xmax" O R 6700 2700 50 
+F6 "Ymin" O R 6700 2900 50 
+F7 "Ymax" O R 6700 3100 50 
+F8 "Zmin" O R 6700 3300 50 
+F9 "Zmax" O R 6700 3500 50 
+F10 "SWXmin-" I L 5950 2550 50 
+F11 "SWXmax+" I L 5950 2650 50 
+F12 "SWXmax-" I L 5950 2750 50 
+F13 "SWYmin+" I L 5950 2850 50 
+F14 "SWYmin-" I L 5950 2950 50 
+F15 "SWYmax+" I L 5950 3050 50 
+F16 "SWYmax-" I L 5950 3150 50 
+F17 "SWZmin+" I L 5950 3250 50 
+F18 "SWZmin-" I L 5950 3350 50 
+F19 "SWZmax+" I L 5950 3450 50 
+F20 "SWZmax-" I L 5950 3550 50 
+F21 "SWXmin+" I L 5950 2450 50 
+F22 "SWProbe+" I L 5950 4050 50 
+F23 "SWProbe-" I L 5950 4150 50 
+F24 "Probe" O R 6700 4100 50 
+F25 "Amin" O R 6700 3700 50 
+F26 "Amax" O R 6700 3900 50 
+F27 "SWAmin-" I L 5950 3750 50 
+F28 "SWAmax+" I L 5950 3850 50 
+F29 "SWAmax-" I L 5950 3950 50 
+F30 "SWAmin+" I L 5950 3650 50 
 $EndSheet
 Text GLabel 1350 4100 0    50   Input ~ 0
 Probe
-Text GLabel 4900 5500 0    50   Input ~ 0
-spenab
-Text GLabel 4900 5600 0    50   Input ~ 0
+Text GLabel 4900 5450 0    50   Input ~ 0
+spdir
+Text GLabel 4950 5550 0    50   Input ~ 0
 sppwm
 $Comp
 L power:GND #PWR01
 U 1 1 5D91A1FA
-P 4350 5900
-F 0 "#PWR01" H 4350 5650 50  0001 C CNN
-F 1 "GND" H 4355 5727 50  0000 C CNN
-F 2 "" H 4350 5900 50  0001 C CNN
-F 3 "" H 4350 5900 50  0001 C CNN
-	1    4350 5900
+P 4350 6000
+F 0 "#PWR01" H 4350 5750 50  0001 C CNN
+F 1 "GND" H 4355 5827 50  0000 C CNN
+F 2 "" H 4350 6000 50  0001 C CNN
+F 3 "" H 4350 6000 50  0001 C CNN
+	1    4350 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 5600 5950 5600
-$Comp
-L Connector:Conn_01x04_Male J2
-U 1 1 5D975AD3
-P 5300 5600
-F 0 "J2" H 5272 5574 50  0000 R CNN
-F 1 "Spindle_Control" H 5272 5483 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5300 5600 50  0001 C CNN
-F 3 "~" H 5300 5600 50  0001 C CNN
-	1    5300 5600
-	-1   0    0    -1  
-$EndComp
+	7800 5550 8150 5550
 Wire Wire Line
-	5600 5700 5950 5700
+	5100 5900 4350 5900
 Wire Wire Line
-	5600 5800 5950 5800
+	4350 5900 4350 6000
 Wire Wire Line
-	5100 5800 4350 5800
-Wire Wire Line
-	4350 5800 4350 5900
-Wire Wire Line
-	5100 5600 4900 5600
-Wire Wire Line
-	5100 5500 4900 5500
+	5100 5550 4950 5550
 Wire Wire Line
 	1500 5800 1250 5800
 Wire Wire Line
 	1500 6300 1250 6300
 Wire Wire Line
-	2750 2500 3000 2500
+	6900 1250 6900 2400
 Wire Wire Line
-	6900 1250 6900 3250
-Wire Wire Line
-	6900 3250 6700 3250
+	6900 2400 6700 2400
 Wire Wire Line
 	2750 2700 3450 2700
 Text Label 4100 1250 0    50   ~ 0
 VREF+
 $Sheet
-S 5950 5400 750  500 
+S 8150 5350 750  500 
 U 5D7DFDC0
 F0 "Spindle_Power_Control" 50
 F1 "Spindle_Power_Control.sch" 50
-F2 "ext_gnd" I L 5950 5800 50 
-F3 "ext_sppwm" I L 5950 5600 50 
-F4 "ext_vcc" I L 5950 5700 50 
-F5 "ext_spenab" I L 5950 5500 50 
+F2 "ext_gnd" I L 8150 5750 50 
+F3 "ext_sppwm" I L 8150 5550 50 
+F4 "ext_vcc" I L 8150 5650 50 
+F5 "ext_spenab" I L 8150 5450 50 
 $EndSheet
 Wire Wire Line
 	4350 1250 6900 1250
 Connection ~ 4350 1250
 Wire Wire Line
-	5100 5700 4350 5700
+	5100 5800 4350 5800
 Wire Wire Line
-	4350 5700 4350 1250
+	4350 5800 4350 1250
 Wire Wire Line
-	5600 5500 5950 5500
-$Comp
-L Connector:Conn_01x02_Female J5
-U 1 1 5D974B94
-P 5400 5700
-F 0 "J5" H 5292 5985 50  0000 C CNN
-F 1 "Spindle_Relay_Power" H 5292 5894 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 5700 50  0001 C CNN
-F 3 "~" H 5400 5700 50  0001 C CNN
-	1    5400 5700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J6
-U 1 1 5D89B5D7
-P 5400 5500
-F 0 "J6" H 5292 5785 50  0000 C CNN
-F 1 "Spindle_Signal" H 5292 5694 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 5500 50  0001 C CNN
-F 3 "~" H 5400 5500 50  0001 C CNN
-	1    5400 5500
-	-1   0    0    -1  
-$EndComp
+	7800 5450 8150 5450
 Wire Wire Line
 	1700 1250 4350 1250
 $Sheet
-S 8550 3150 800  1600
+S 8400 3150 800  1600
 U 5D91D2DB
 F0 "Level_Shifter" 50
 F1 "Level_Shifter.sch" 50
-F2 "lo_1_1" I L 8550 3400 50 
-F3 "lo_1_2" I L 8550 3500 50 
-F4 "lo_1_3" I L 8550 3600 50 
-F5 "lo_1_4" I L 8550 3700 50 
-F6 "lo_1_5" I L 8550 3800 50 
-F7 "lo_1_6" I L 8550 3900 50 
-F8 "lo_2_1" I L 8550 4000 50 
-F9 "lo_2_2" I L 8550 4100 50 
-F10 "lo_2_3" I L 8550 4200 50 
-F11 "lo_2_4" I L 8550 4300 50 
-F12 "lo_2_5" I L 8550 4400 50 
-F13 "lo_2_6" I L 8550 4500 50 
-F14 "in_v_hi" I R 9350 3250 50 
-F15 "in_v_lo" I L 8550 3250 50 
-F16 "in_gnd" I L 8550 4650 50 
-F17 "hi_1_1" O R 9350 3400 50 
-F18 "hi_1_2" O R 9350 3500 50 
-F19 "hi_1_3" O R 9350 3600 50 
-F20 "hi_1_4" O R 9350 3700 50 
-F21 "hi_1_5" O R 9350 3800 50 
-F22 "hi_1_6" O R 9350 3900 50 
-F23 "hi_2_1" O R 9350 4000 50 
-F24 "hi_2_2" O R 9350 4100 50 
-F25 "hi_2_3" O R 9350 4200 50 
-F26 "hi_2_4" O R 9350 4300 50 
-F27 "hi_2_5" O R 9350 4400 50 
-F28 "hi_2_6" O R 9350 4500 50 
+F2 "lo_1_1" I L 8400 3400 50 
+F3 "lo_1_2" I L 8400 3500 50 
+F4 "lo_1_3" I L 8400 3600 50 
+F5 "lo_1_4" I L 8400 3700 50 
+F6 "lo_1_5" I L 8400 3800 50 
+F7 "lo_1_6" I L 8400 3900 50 
+F8 "lo_2_1" I L 8400 4000 50 
+F9 "lo_2_2" I L 8400 4100 50 
+F10 "lo_2_3" I L 8400 4200 50 
+F11 "lo_2_4" I L 8400 4300 50 
+F12 "lo_2_5" I L 8400 4400 50 
+F13 "lo_2_6" I L 8400 4500 50 
+F14 "in_v_hi" I R 9200 3250 50 
+F15 "in_v_lo" I L 8400 3250 50 
+F16 "in_gnd" I L 8400 4650 50 
+F17 "hi_1_1" O R 9200 3400 50 
+F18 "hi_1_2" O R 9200 3500 50 
+F19 "hi_1_3" O R 9200 3600 50 
+F20 "hi_1_4" O R 9200 3700 50 
+F21 "hi_1_5" O R 9200 3800 50 
+F22 "hi_1_6" O R 9200 3900 50 
+F23 "hi_2_1" O R 9200 4000 50 
+F24 "hi_2_2" O R 9200 4100 50 
+F25 "hi_2_3" O R 9200 4200 50 
+F26 "hi_2_4" O R 9200 4300 50 
+F27 "hi_2_5" O R 9200 4400 50 
+F28 "hi_2_6" O R 9200 4500 50 
 $EndSheet
 Wire Wire Line
-	6900 1250 8450 1250
+	6900 1250 8300 1250
 Wire Wire Line
-	9450 3250 9350 3250
+	9300 3250 9200 3250
 Wire Wire Line
-	8450 1250 8450 3250
+	8300 1250 8300 3250
 Wire Wire Line
-	8450 3250 8550 3250
+	8300 3250 8400 3250
 Wire Wire Line
-	8550 4650 8450 4650
+	8400 4650 8300 4650
 Wire Wire Line
-	8450 4650 8450 4800
+	8300 4650 8300 4800
 Wire Wire Line
-	7900 3400 8550 3400
+	8000 3400 8400 3400
 Wire Wire Line
-	8550 3500 7900 3500
+	8400 3500 8000 3500
 Wire Wire Line
-	7900 3600 8550 3600
+	8000 3600 8400 3600
 Wire Wire Line
-	8550 3700 7900 3700
+	8400 3700 8000 3700
 Wire Wire Line
-	7900 3800 8550 3800
+	8000 3800 8400 3800
 Wire Wire Line
-	7900 3900 8550 3900
+	8000 3900 8400 3900
 Wire Wire Line
-	8550 4000 7900 4000
+	8400 4000 8000 4000
 Wire Wire Line
-	7900 4100 8550 4100
+	8000 4100 8400 4100
 Wire Wire Line
-	8550 4200 7900 4200
+	8400 4200 8000 4200
 Wire Wire Line
-	7900 4300 8550 4300
+	8000 4300 8400 4300
 Wire Wire Line
-	8550 4400 7900 4400
+	8400 4400 8000 4400
 Wire Wire Line
-	7900 4500 8550 4500
+	8000 4500 8400 4500
 $Comp
 L power:+5V #PWR0104
 U 1 1 5DA9E5EF
-P 9450 1150
-F 0 "#PWR0104" H 9450 1000 50  0001 C CNN
-F 1 "+5V" V 9450 1350 50  0000 C CNN
-F 2 "" H 9450 1150 50  0000 C CNN
-F 3 "" H 9450 1150 50  0000 C CNN
-	1    9450 1150
+P 9300 1150
+F 0 "#PWR0104" H 9300 1000 50  0001 C CNN
+F 1 "+5V" V 9300 1350 50  0000 C CNN
+F 2 "" H 9300 1150 50  0000 C CNN
+F 3 "" H 9300 1150 50  0000 C CNN
+	1    9300 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1102,22 +1043,22 @@ Connection ~ 1850 3050
 Wire Wire Line
 	1850 3050 1850 3100
 Wire Wire Line
-	950  2500 950  2650
+	1200 2500 1200 2650
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5DB555D9
-P 950 2850
-F 0 "SW1" V 996 2802 50  0000 R CNN
-F 1 "SW_Push" V 905 2802 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 950 3050 50  0001 C CNN
-F 3 "~" H 950 3050 50  0001 C CNN
-	1    950  2850
+P 1200 2850
+F 0 "SW1" V 1246 2802 50  0000 R CNN
+F 1 "SW_Push" V 1155 2802 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1200 3050 50  0001 C CNN
+F 3 "~" H 1200 3050 50  0001 C CNN
+	1    1200 2850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	950  3050 1850 3050
+	1200 3050 1850 3050
 Wire Wire Line
-	950  2500 1950 2500
+	1200 2500 1950 2500
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5D8769FD
@@ -1133,14 +1074,307 @@ Connection ~ 3350 5700
 Wire Wire Line
 	3350 5700 3350 5800
 Wire Wire Line
-	9450 1150 9450 3250
+	9300 1150 9300 3250
 Wire Wire Line
 	1600 950  1600 2700
 NoConn ~ 1600 950 
 $Sheet
-S 6050 6200 750  550 
+S 5100 5250 1500 750 
 U 5DD17641
 F0 "Spindle_VFD_Control" 50
 F1 "Spindle_VFD_Control.sch" 50
+F2 "inverter_12V" I R 6600 5800 50 
+F3 "inverter_frequency_10V" I R 6600 5350 50 
+F4 "ext_sppwm" I L 5100 5550 50 
+F5 "ext_gnd" I L 5100 5900 50 
+F6 "ext_spdir" I L 5100 5450 50 
+F7 "ext_vcc" I L 5100 5800 50 
+F8 "ext_spenab" I L 5100 5350 50 
+F9 "inverter_fw_switch" I R 6600 5450 50 
+F10 "inverter_bw_switch" I R 6600 5550 50 
+F11 "inverter_gnd" I R 6600 5900 50 
 $EndSheet
+Text GLabel 3450 2500 2    50   Output ~ 0
+spdir
+Wire Wire Line
+	2750 2500 3450 2500
+Text GLabel 4900 5350 0    50   Input ~ 0
+spenab
+Wire Wire Line
+	5100 5450 4900 5450
+Wire Wire Line
+	4900 5350 5100 5350
+$Comp
+L Connector_Generic:Conn_02x12_Odd_Even J9
+U 1 1 5E0C2193
+P 10700 5350
+F 0 "J9" H 10750 6067 50  0000 C CNN
+F 1 "Motor_Control_Mirror" H 10750 5976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 10700 5350 50  0001 C CNN
+F 3 "~" H 10700 5350 50  0001 C CNN
+	1    10700 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 4850 11100 4850
+Connection ~ 11100 4850
+Wire Wire Line
+	11100 4850 11100 4950
+Wire Wire Line
+	11100 4950 11000 4950
+Connection ~ 11100 4950
+Wire Wire Line
+	11100 4950 11100 5050
+Wire Wire Line
+	11000 5050 11100 5050
+Connection ~ 11100 5050
+Wire Wire Line
+	11100 5050 11100 5150
+Wire Wire Line
+	11000 5150 11100 5150
+Connection ~ 11100 5150
+Wire Wire Line
+	11100 5150 11100 5250
+Wire Wire Line
+	11000 5250 11100 5250
+Connection ~ 11100 5250
+Wire Wire Line
+	11100 5250 11100 5350
+Wire Wire Line
+	11000 5350 11100 5350
+Connection ~ 11100 5350
+Wire Wire Line
+	11100 5350 11100 5450
+Wire Wire Line
+	11000 5450 11100 5450
+Connection ~ 11100 5450
+Wire Wire Line
+	11100 5450 11100 5550
+Wire Wire Line
+	11000 5550 11100 5550
+Connection ~ 11100 5550
+Wire Wire Line
+	11100 5550 11100 5650
+Wire Wire Line
+	11000 5650 11100 5650
+Connection ~ 11100 5650
+Wire Wire Line
+	11100 5650 11100 5750
+Wire Wire Line
+	11000 5750 11100 5750
+Connection ~ 11100 5750
+Wire Wire Line
+	11100 5750 11100 5850
+Wire Wire Line
+	11000 5850 11100 5850
+Connection ~ 11100 5850
+Wire Wire Line
+	11100 5850 11100 5950
+Wire Wire Line
+	11000 5950 11100 5950
+Connection ~ 11100 5950
+Wire Wire Line
+	11100 5950 11100 6200
+Connection ~ 1950 2500
+Wire Wire Line
+	1950 2500 2200 2500
+Wire Wire Line
+	1850 3050 2100 3050
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5E163504
+P 750 3300
+F 0 "J2" V 904 3112 50  0000 R CNN
+F 1 "EStop" V 813 3112 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 750 3300 50  0001 C CNN
+F 3 "~" H 750 3300 50  0001 C CNN
+	1    750  3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  3100 850  3050
+Wire Wire Line
+	850  3050 1200 3050
+Connection ~ 1200 3050
+Wire Wire Line
+	750  3100 750  2500
+Wire Wire Line
+	750  2500 1200 2500
+Connection ~ 1200 2500
+Wire Wire Line
+	9300 3400 9300 4850
+Wire Wire Line
+	9300 4850 10500 4850
+Connection ~ 9300 3400
+Wire Wire Line
+	9300 3400 10500 3400
+Wire Wire Line
+	9400 3500 9400 4950
+Wire Wire Line
+	9400 4950 10500 4950
+Connection ~ 9400 3500
+Wire Wire Line
+	9400 3500 9200 3500
+Wire Wire Line
+	9500 3600 9500 5050
+Wire Wire Line
+	9500 5050 10500 5050
+Connection ~ 9500 3600
+Wire Wire Line
+	9500 3600 9200 3600
+Wire Wire Line
+	9600 3700 9600 5150
+Wire Wire Line
+	9600 5150 10500 5150
+Connection ~ 9600 3700
+Wire Wire Line
+	9600 3700 10500 3700
+Wire Wire Line
+	9700 3800 9700 5250
+Wire Wire Line
+	9700 5250 10500 5250
+Connection ~ 9700 3800
+Wire Wire Line
+	9700 3800 9200 3800
+Wire Wire Line
+	9800 3900 9800 5350
+Wire Wire Line
+	9800 5350 10500 5350
+Connection ~ 9800 3900
+Wire Wire Line
+	9800 3900 9200 3900
+Wire Wire Line
+	9900 4000 9900 5450
+Wire Wire Line
+	9900 5450 10500 5450
+Connection ~ 9900 4000
+Wire Wire Line
+	9900 4000 9200 4000
+Wire Wire Line
+	10000 4100 10000 5550
+Wire Wire Line
+	10000 5550 10500 5550
+Connection ~ 10000 4100
+Wire Wire Line
+	10000 4100 9200 4100
+Wire Wire Line
+	10100 4200 10100 5650
+Wire Wire Line
+	10100 5650 10500 5650
+Connection ~ 10100 4200
+Wire Wire Line
+	10100 4200 9200 4200
+Wire Wire Line
+	10200 4300 10200 5750
+Wire Wire Line
+	10200 5750 10500 5750
+Connection ~ 10200 4300
+Wire Wire Line
+	10200 4300 9200 4300
+Wire Wire Line
+	10500 4400 10300 4400
+Wire Wire Line
+	10300 4400 10300 5850
+Wire Wire Line
+	10300 5850 10500 5850
+Connection ~ 10300 4400
+Wire Wire Line
+	10300 4400 9200 4400
+Wire Wire Line
+	10400 4500 10400 5950
+Wire Wire Line
+	10400 5950 10500 5950
+Connection ~ 10400 4500
+Wire Wire Line
+	10400 4500 9200 4500
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E2A7440
+P 7050 5800
+AR Path="/5D7DFDC0/5E2A7440" Ref="J?"  Part="1" 
+AR Path="/5E2A7440" Ref="J8"  Part="1" 
+F 0 "J8" H 7022 5774 50  0000 R CNN
+F 1 "inverter_power" H 7022 5683 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5800 50  0001 C CNN
+F 3 "~" H 7050 5800 50  0001 C CNN
+	1    7050 5800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5800 6850 5800
+Wire Wire Line
+	6600 5900 6850 5900
+Wire Wire Line
+	6600 5450 6850 5450
+Wire Wire Line
+	6600 5350 6850 5350
+Wire Wire Line
+	6600 5550 6850 5550
+NoConn ~ 6850 5250
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E2CBC81
+P 7050 5250
+AR Path="/5D7DFDC0/5E2CBC81" Ref="J?"  Part="1" 
+AR Path="/5E2CBC81" Ref="J5"  Part="1" 
+F 0 "J5" H 7022 5224 50  0000 R CNN
+F 1 "inverter_freq" H 7022 5133 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5250 50  0001 C CNN
+F 3 "~" H 7050 5250 50  0001 C CNN
+	1    7050 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E2B9818
+P 7050 5450
+AR Path="/5D7DFDC0/5E2B9818" Ref="J?"  Part="1" 
+AR Path="/5E2B9818" Ref="J6"  Part="1" 
+F 0 "J6" H 7022 5424 50  0000 R CNN
+F 1 "inverter_cmd" H 7022 5333 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5450 50  0001 C CNN
+F 3 "~" H 7050 5450 50  0001 C CNN
+	1    7050 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x18 J4
+U 1 1 5DAA928F
+P 5350 3250
+F 0 "J4" H 5600 4350 50  0000 C CNN
+F 1 "Limit_Switches" H 5350 4250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 5350 3250 50  0001 C CNN
+F 3 "~" H 5350 3250 50  0001 C CNN
+	1    5350 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3850 5950 3850
+Wire Wire Line
+	5550 3950 5950 3950
+Wire Wire Line
+	5550 4050 5950 4050
+Wire Wire Line
+	5550 4150 5950 4150
+Text GLabel 1350 3800 0    50   Input ~ 0
+Amn
+Text GLabel 1350 3900 0    50   Input ~ 0
+Amx
+Wire Wire Line
+	1500 4000 1950 4000
+Wire Wire Line
+	1350 3800 1950 3800
+Wire Wire Line
+	1350 3900 1950 3900
+NoConn ~ 1500 4000
+Text GLabel 7000 3700 2    50   Output ~ 0
+Amn
+Text GLabel 7000 3900 2    50   Output ~ 0
+Amx
+Wire Wire Line
+	6700 3700 7000 3700
+Wire Wire Line
+	6700 3900 7000 3900
+NoConn ~ 7800 5450
+NoConn ~ 7800 5550
 $EndSCHEMATC
