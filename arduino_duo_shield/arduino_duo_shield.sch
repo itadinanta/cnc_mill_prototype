@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title ""
 Date "mar. 31 mars 2015"
 Rev ""
@@ -164,80 +164,6 @@ Text Label 3000 2100 0    60   ~ 0
 SCL
 Text Label 3000 2300 0    60   ~ 0
 AREF
-Text Notes 1600 7400 0    60   ~ 0
-Holes
-$Comp
-L Connector_Generic:Conn_01x01 P1
-U 1 1 56D70B71
-P 1500 7050
-F 0 "P1" V 1600 7050 31  0000 C CNN
-F 1 "CONN_01X01" V 1600 7050 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1500 7050 50  0001 C CNN
-F 3 "" H 1500 7050 50  0000 C CNN
-	1    1500 7050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P2
-U 1 1 56D70C9B
-P 1600 7050
-F 0 "P2" V 1700 7050 31  0000 C CNN
-F 1 "CONN_01X01" V 1700 7050 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1600 7050 50  0001 C CNN
-F 3 "" H 1600 7050 50  0000 C CNN
-	1    1600 7050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P3
-U 1 1 56D70CE6
-P 1700 7050
-F 0 "P3" V 1800 7050 31  0000 C CNN
-F 1 "CONN_01X01" V 1800 7050 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1700 7050 50  0001 C CNN
-F 3 "" H 1700 7050 50  0000 C CNN
-	1    1700 7050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P4
-U 1 1 56D70D2C
-P 1800 7050
-F 0 "P4" V 1900 7050 31  0000 C CNN
-F 1 "CONN_01X01" V 1900 7050 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1800 7050 50  0001 C CNN
-F 3 "" H 1800 7050 50  0000 C CNN
-	1    1800 7050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P5
-U 1 1 56D711A2
-P 1900 7050
-F 0 "P5" V 2000 7050 31  0000 C CNN
-F 1 "CONN_01X01" V 2000 7050 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 1900 7050 50  0001 C CNN
-F 3 "" H 1900 7050 50  0000 C CNN
-	1    1900 7050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P6
-U 1 1 56D711F0
-P 2000 7050
-F 0 "P6" V 2100 7050 31  0000 C CNN
-F 1 "CONN_01X01" V 2100 7050 50  0001 C CNN
-F 2 "Socket_Arduino_Mega:Arduino_1pin" H 2000 7050 50  0001 C CNN
-F 3 "" H 2000 7050 50  0000 C CNN
-	1    2000 7050
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 1500 7250
-NoConn ~ 1600 7250
-NoConn ~ 1700 7250
-NoConn ~ 1800 7250
-NoConn ~ 1900 7250
-NoConn ~ 2000 7250
 $Comp
 L conn_01x08_arduino_power:Conn_01x08_arduino_power P7
 U 1 1 56D71773
@@ -917,8 +843,6 @@ F 3 "" H 4350 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 5550 8150 5550
-Wire Wire Line
 	5100 5900 4350 5900
 Wire Wire Line
 	4350 5900 4350 6000
@@ -936,16 +860,6 @@ Wire Wire Line
 	2750 2700 3450 2700
 Text Label 4100 1250 0    50   ~ 0
 VREF+
-$Sheet
-S 8150 5350 750  500 
-U 5D7DFDC0
-F0 "Spindle_Power_Control" 50
-F1 "Spindle_Power_Control.sch" 50
-F2 "ext_gnd" I L 8150 5750 50 
-F3 "ext_sppwm" I L 8150 5550 50 
-F4 "ext_vcc" I L 8150 5650 50 
-F5 "ext_spenab" I L 8150 5450 50 
-$EndSheet
 Wire Wire Line
 	4350 1250 6900 1250
 Connection ~ 4350 1250
@@ -953,8 +867,6 @@ Wire Wire Line
 	5100 5800 4350 5800
 Wire Wire Line
 	4350 5800 4350 1250
-Wire Wire Line
-	7800 5450 8150 5450
 Wire Wire Line
 	1700 1250 4350 1250
 $Sheet
@@ -1057,8 +969,6 @@ F 3 "~" H 1200 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 3050 1850 3050
-Wire Wire Line
-	1200 2500 1950 2500
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5D8769FD
@@ -1175,21 +1085,18 @@ Wire Wire Line
 Connection ~ 11100 5950
 Wire Wire Line
 	11100 5950 11100 6200
-Connection ~ 1950 2500
-Wire Wire Line
-	1950 2500 2200 2500
 Wire Wire Line
 	1850 3050 2100 3050
 $Comp
-L Connector:Conn_01x02_Male J2
+L Connector:Conn_01x02_Female J2
 U 1 1 5E163504
 P 750 3300
-F 0 "J2" V 904 3112 50  0000 R CNN
-F 1 "EStop" V 813 3112 50  0000 R CNN
+F 0 "J2" V 750 3150 50  0000 R CNN
+F 1 "EStop" V 650 3150 50  0000 R CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 750 3300 50  0001 C CNN
 F 3 "~" H 750 3300 50  0001 C CNN
 	1    750  3300
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	850  3100 850  3050
@@ -1307,10 +1214,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 5450 6850 5450
 Wire Wire Line
-	6600 5350 6850 5350
+	6600 5350 6750 5350
 Wire Wire Line
 	6600 5550 6850 5550
-NoConn ~ 6850 5250
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E2CBC81
@@ -1375,6 +1281,13 @@ Wire Wire Line
 	6700 3700 7000 3700
 Wire Wire Line
 	6700 3900 7000 3900
-NoConn ~ 7800 5450
-NoConn ~ 7800 5550
+Wire Wire Line
+	1200 2500 1950 2500
+Wire Wire Line
+	6850 5250 6750 5250
+Wire Wire Line
+	6750 5250 6750 5350
+Connection ~ 6750 5350
+Wire Wire Line
+	6750 5350 6850 5350
 $EndSCHEMATC

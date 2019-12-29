@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -60,7 +60,7 @@ U 1 1 5DD77764
 P 5050 3050
 F 0 "C8" H 5168 3096 50  0000 L CNN
 F 1 "100u" H 5168 3005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5088 2900 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 5088 2900 50  0001 C CNN
 F 3 "~" H 5050 3050 50  0001 C CNN
 	1    5050 3050
 	-1   0    0    -1  
@@ -528,4 +528,8 @@ F 3 "~" H 4200 5000 50  0001 C CNN
 	1    4200 5000
 	0    1    1    0   
 $EndComp
+Text Label 4600 800  0    50   ~ 0
+I_PWRSAFE
+Text Label 5800 6600 0    50   ~ 0
+I_GND
 $EndSCHEMATC
