@@ -459,8 +459,6 @@ Wire Wire Line
 	4050 3300 3100 3300
 Connection ~ 4050 2500
 Wire Wire Line
-	4300 6100 4300 6250
-Wire Wire Line
 	4300 6600 3450 6600
 Connection ~ 3450 6600
 Wire Wire Line
@@ -493,19 +491,6 @@ F 3 "~" H 4400 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 5450 4400 5500
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5E3EDC9D
-P 4300 6350
-F 0 "JP1" V 4254 6424 50  0000 L CNN
-F 1 "Jumper_NC_Small" V 4345 6424 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4300 6350 50  0001 C CNN
-F 3 "~" H 4300 6350 50  0001 C CNN
-	1    4300 6350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 6450 4300 6600
 Wire Wire Line
 	4200 4800 4400 4800
 Connection ~ 4400 4800
@@ -532,4 +517,6 @@ Text Label 4600 800  0    50   ~ 0
 I_PWRSAFE
 Text Label 5800 6600 0    50   ~ 0
 I_GND
+Wire Wire Line
+	4300 6100 4300 6600
 $EndSCHEMATC
