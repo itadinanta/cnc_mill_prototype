@@ -85,14 +85,14 @@ inverter_frequency_10V
 $Comp
 L Device:R R?
 U 1 1 5DD63534
-P 4050 1300
+P 4050 1350
 AR Path="/5D7DFDC0/5DD63534" Ref="R?"  Part="1" 
 AR Path="/5DD17641/5DD63534" Ref="R21"  Part="1" 
-F 0 "R21" H 4120 1346 50  0000 L CNN
-F 1 "10K" H 4120 1255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 1300 50  0001 C CNN
-F 3 "~" H 4050 1300 50  0001 C CNN
-	1    4050 1300
+F 0 "R21" H 4120 1396 50  0000 L CNN
+F 1 "1K5" H 4120 1305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 1350 50  0001 C CNN
+F 3 "~" H 4050 1350 50  0001 C CNN
+	1    4050 1350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -114,8 +114,6 @@ F 3 "~" H 2300 3300 50  0001 C CNN
 	1    2300 3300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4050 1450 4050 1550
 Wire Wire Line
 	4250 2500 4050 2500
 Wire Wire Line
@@ -140,7 +138,6 @@ F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 4450 1550 50  0001 L CNN
 $EndComp
 Wire Wire Line
 	4050 1550 4250 1550
-Connection ~ 4050 1550
 Wire Wire Line
 	4050 1550 4050 2500
 Wire Wire Line
@@ -149,7 +146,7 @@ Connection ~ 4550 1850
 Wire Wire Line
 	4550 800  4050 800 
 Wire Wire Line
-	4050 800  4050 1150
+	4050 800  4050 850 
 Wire Wire Line
 	5050 2150 5050 2250
 Wire Wire Line
@@ -519,4 +516,20 @@ Text Label 5800 6600 0    50   ~ 0
 I_GND
 Wire Wire Line
 	4300 6100 4300 6600
+Wire Wire Line
+	4050 1500 4050 1550
+Connection ~ 4050 1550
+Wire Wire Line
+	4050 1150 4050 1200
+$Comp
+L Device:LED D1
+U 1 1 5E0AD300
+P 4050 1000
+F 0 "D1" V 4089 883 50  0000 R CNN
+F 1 "LED" V 3998 883 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4050 1000 50  0001 C CNN
+F 3 "~" H 4050 1000 50  0001 C CNN
+	1    4050 1000
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
