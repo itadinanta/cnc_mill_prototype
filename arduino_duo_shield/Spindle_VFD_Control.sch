@@ -37,7 +37,7 @@ P 5050 2000
 AR Path="/5D7DFDC0/5DD6EE33" Ref="R?"  Part="1" 
 AR Path="/5DD17641/5DD6EE33" Ref="R23"  Part="1" 
 F 0 "R23" H 5120 2046 50  0000 L CNN
-F 1 "330" H 5120 1955 50  0000 L CNN
+F 1 "3K3" H 5120 1955 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4980 2000 50  0001 C CNN
 F 3 "~" H 5050 2000 50  0001 C CNN
 	1    5050 2000
@@ -80,7 +80,7 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2800 3400 50  00
 $EndComp
 Wire Wire Line
 	2450 3300 2500 3300
-Text HLabel 6250 3050 2    50   Input ~ 0
+Text HLabel 6550 3150 2    50   Input ~ 0
 inverter_frequency_10V
 $Comp
 L Device:R R?
@@ -89,7 +89,7 @@ P 4050 1350
 AR Path="/5D7DFDC0/5DD63534" Ref="R?"  Part="1" 
 AR Path="/5DD17641/5DD63534" Ref="R21"  Part="1" 
 F 0 "R21" H 4120 1396 50  0000 L CNN
-F 1 "1K5" H 4120 1305 50  0000 L CNN
+F 1 "2K" H 4120 1305 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 1350 50  0001 C CNN
 F 3 "~" H 4050 1350 50  0001 C CNN
 	1    4050 1350
@@ -116,8 +116,6 @@ F 3 "~" H 2300 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 2500 4050 2500
-Wire Wire Line
-	6250 800  5500 800 
 Wire Wire Line
 	4550 1350 4550 800 
 Connection ~ 4550 800 
@@ -164,8 +162,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 3500 5700 3500
 Connection ~ 5050 3500
-Wire Wire Line
-	5850 3050 6250 3050
 $Comp
 L Device:R_POT_TRIM RV1
 U 1 1 5DE35CE7
@@ -184,16 +180,14 @@ Wire Wire Line
 $Comp
 L Device:D_ALT D5
 U 1 1 5DE3902E
-P 5350 800
-F 0 "D5" H 5350 1016 50  0000 C CNN
-F 1 "1N4007" H 5350 925 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5350 800 50  0001 C CNN
-F 3 "~" H 5350 800 50  0001 C CNN
-	1    5350 800 
+P 5700 800
+F 0 "D5" H 5700 1016 50  0000 C CNN
+F 1 "1N4007" H 5700 925 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5700 800 50  0001 C CNN
+F 3 "~" H 5700 800 50  0001 C CNN
+	1    5700 800 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 800  4550 800 
 $Comp
 L Relay:G5LE-1 K?
 U 1 1 5DE4EF4D
@@ -418,11 +412,11 @@ Wire Wire Line
 Connection ~ 3100 5450
 Wire Wire Line
 	3100 5450 3450 5450
-Text HLabel 6200 3950 2    50   Input ~ 0
+Text HLabel 6550 3950 2    50   Input ~ 0
 inverter_fw_switch
-Text HLabel 6200 4050 2    50   Input ~ 0
+Text HLabel 6550 4050 2    50   Input ~ 0
 inverter_bw_switch
-Text HLabel 6250 6600 2    50   Input ~ 0
+Text HLabel 6600 6600 2    50   Input ~ 0
 inverter_gnd
 Wire Wire Line
 	1950 3500 2500 3500
@@ -433,11 +427,11 @@ ext_gnd
 Wire Wire Line
 	1950 6350 2500 6350
 Wire Wire Line
-	6200 3950 4300 3950
+	6550 3950 4300 3950
 Wire Wire Line
 	4300 3950 4300 4100
 Wire Wire Line
-	6200 4050 4500 4050
+	6550 4050 4500 4050
 Wire Wire Line
 	4500 4050 4500 4100
 Wire Wire Line
@@ -466,7 +460,7 @@ Wire Wire Line
 Connection ~ 3450 5200
 Connection ~ 5700 6600
 Wire Wire Line
-	5700 6600 6250 6600
+	5700 6600 6600 6600
 Wire Wire Line
 	3450 5450 3450 5650
 Wire Wire Line
@@ -532,4 +526,77 @@ F 3 "~" H 4050 1000 50  0001 C CNN
 	1    4050 1000
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Amplifier_Operational:LM358 U3
+U 1 1 5E168C58
+P 6200 3150
+F 0 "U3" H 6200 3517 50  0000 C CNN
+F 1 "LM358" H 6200 3426 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6200 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3150 6550 3150
+Wire Wire Line
+	5850 3050 5900 3050
+Wire Wire Line
+	6500 3150 6500 3450
+Wire Wire Line
+	6500 3450 5900 3450
+Wire Wire Line
+	5900 3450 5900 3250
+Connection ~ 6500 3150
+Connection ~ 5300 800 
+Wire Wire Line
+	5300 800  4550 800 
+Text HLabel 6250 1650 2    50   Input ~ 0
+inverter_gnd
+Wire Wire Line
+	5550 800  5300 800 
+Wire Wire Line
+	5850 800  6250 800 
+Wire Wire Line
+	5300 800  5300 950 
+Wire Wire Line
+	5300 1650 5800 1650
+Wire Wire Line
+	5300 1650 5300 1550
+$Comp
+L Amplifier_Operational:LM358 U3
+U 3 1 5E193DCF
+P 5400 1250
+F 0 "U3" H 5358 1296 50  0000 L CNN
+F 1 "LM358" H 5358 1205 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5400 1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5400 1250 50  0001 C CNN
+	3    5400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E16F505
+P 5300 800
+F 0 "#FLG0101" H 5300 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 973 50  0000 C CNN
+F 2 "" H 5300 800 50  0001 C CNN
+F 3 "~" H 5300 800 50  0001 C CNN
+	1    5300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E170449
+P 5800 1650
+F 0 "#FLG0102" H 5800 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 1823 50  0000 C CNN
+F 2 "" H 5800 1650 50  0001 C CNN
+F 3 "~" H 5800 1650 50  0001 C CNN
+	1    5800 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5800 1650
+Wire Wire Line
+	5800 1650 6250 1650
 $EndSCHEMATC
