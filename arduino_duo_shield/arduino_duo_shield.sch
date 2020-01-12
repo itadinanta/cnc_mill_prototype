@@ -1000,9 +1000,10 @@ F5 "ext_gnd" I L 5100 5900 50
 F6 "ext_spdir" I L 5100 5450 50 
 F7 "ext_vcc" I L 5100 5800 50 
 F8 "ext_spenab" I L 5100 5350 50 
-F9 "inverter_fw_switch" I R 6600 5450 50 
-F10 "inverter_bw_switch" I R 6600 5550 50 
+F9 "inverter_fw_switch" I R 6600 5550 50 
+F10 "inverter_bw_switch" I R 6600 5650 50 
 F11 "inverter_gnd" I R 6600 5900 50 
+F12 "inverter_frequency_raw_10V" I R 6600 5450 50 
 $EndSheet
 Text GLabel 3450 2500 2    50   Output ~ 0
 spdir
@@ -1208,35 +1209,33 @@ F 3 "~" H 7050 5800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 5450 6850 5450
-Wire Wire Line
-	6600 5350 6750 5350
-Wire Wire Line
 	6600 5550 6850 5550
+Wire Wire Line
+	6600 5650 6850 5650
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E2CBC81
-P 7050 5250
+P 7050 5350
 AR Path="/5D7DFDC0/5E2CBC81" Ref="J?"  Part="1" 
 AR Path="/5E2CBC81" Ref="J5"  Part="1" 
-F 0 "J5" H 7022 5224 50  0000 R CNN
-F 1 "inverter_freq" H 7022 5133 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5250 50  0001 C CNN
-F 3 "~" H 7050 5250 50  0001 C CNN
-	1    7050 5250
+F 0 "J5" H 7022 5324 50  0000 R CNN
+F 1 "inverter_freq" H 7022 5233 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5350 50  0001 C CNN
+F 3 "~" H 7050 5350 50  0001 C CNN
+	1    7050 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E2B9818
-P 7050 5450
+P 7050 5550
 AR Path="/5D7DFDC0/5E2B9818" Ref="J?"  Part="1" 
 AR Path="/5E2B9818" Ref="J6"  Part="1" 
-F 0 "J6" H 7022 5424 50  0000 R CNN
-F 1 "inverter_cmd" H 7022 5333 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5450 50  0001 C CNN
-F 3 "~" H 7050 5450 50  0001 C CNN
-	1    7050 5450
+F 0 "J6" H 7022 5524 50  0000 R CNN
+F 1 "inverter_cmd" H 7022 5433 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5550 50  0001 C CNN
+F 3 "~" H 7050 5550 50  0001 C CNN
+	1    7050 5550
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1280,14 +1279,11 @@ Wire Wire Line
 Wire Wire Line
 	1200 2500 1950 2500
 Wire Wire Line
-	6850 5250 6750 5250
-Wire Wire Line
-	6750 5250 6750 5350
-Connection ~ 6750 5350
-Wire Wire Line
-	6750 5350 6850 5350
+	6850 5350 6600 5350
 Wire Wire Line
 	6600 5900 6850 5900
 Wire Wire Line
 	6600 5800 6850 5800
+Wire Wire Line
+	6600 5450 6850 5450
 $EndSCHEMATC
