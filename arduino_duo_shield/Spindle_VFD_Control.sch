@@ -227,7 +227,7 @@ P 1800 5050
 AR Path="/5D7DFDC0/5DE4EF5E" Ref="R?"  Part="1" 
 AR Path="/5DD17641/5DE4EF5E" Ref="R22"  Part="1" 
 F 0 "R22" H 1870 5096 50  0000 L CNN
-F 1 "220" H 1870 5005 50  0000 L CNN
+F 1 "330" H 1870 5005 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1730 5050 50  0001 C CNN
 F 3 "~" H 1800 5050 50  0001 C CNN
 	1    1800 5050
@@ -332,7 +332,7 @@ P 1800 6450
 AR Path="/5D7DFDC0/5DE55540" Ref="R?"  Part="1" 
 AR Path="/5DD17641/5DE55540" Ref="R24"  Part="1" 
 F 0 "R24" H 1870 6496 50  0000 L CNN
-F 1 "220" H 1870 6405 50  0000 L CNN
+F 1 "330" H 1870 6405 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1730 6450 50  0001 C CNN
 F 3 "~" H 1800 6450 50  0001 C CNN
 	1    1800 6450
@@ -626,4 +626,29 @@ inverter_frequency_raw_10V
 Wire Wire Line
 	5200 2950 6050 2950
 Connection ~ 5200 2950
+Text HLabel 1450 1100 0    50   Input ~ 0
+ext_12v
+Wire Wire Line
+	3550 1100 2600 1100
+Connection ~ 3550 1100
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 5E2A8878
+P 2500 1100
+F 0 "JP4" V 2454 1148 50  0000 L CNN
+F 1 "Jumper_NC_Small" V 2545 1148 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 1100 50  0001 C CNN
+F 3 "~" H 2500 1100 50  0001 C CNN
+	1    2500 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 1100 1450 1100
+Text HLabel 1450 6150 0    50   Input ~ 0
+ext_estop
+Wire Wire Line
+	1450 6150 2000 6150
+Wire Wire Line
+	2000 6150 2000 6450
+Connection ~ 2000 6450
 $EndSCHEMATC

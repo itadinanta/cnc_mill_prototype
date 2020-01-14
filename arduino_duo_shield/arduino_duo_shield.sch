@@ -16,7 +16,7 @@ $EndDescr
 NoConn ~ 1950 2300
 Text Label 1850 2150 1    60   ~ 0
 IOREF
-Text Label 1500 2150 1    60   ~ 0
+Text Label 1750 3000 2    60   ~ 0
 Vin
 Text Label 1500 3400 0    60   ~ 0
 A0
@@ -265,15 +265,11 @@ Wire Wire Line
 Wire Wire Line
 	1600 2700 1950 2700
 Wire Wire Line
-	1950 3000 1500 3000
-Wire Wire Line
-	1500 3000 1500 2150
+	1950 3000 1350 3000
 Wire Wire Line
 	1950 2800 1850 2800
 Wire Wire Line
 	1850 2800 1850 2900
-Wire Wire Line
-	1850 2900 1850 3050
 Wire Wire Line
 	1950 2900 1850 2900
 Connection ~ 1850 2900
@@ -622,7 +618,6 @@ NoConn ~ 3000 2100
 NoConn ~ 3000 2200
 NoConn ~ 3000 2300
 NoConn ~ 2900 6600
-NoConn ~ 1500 2150
 NoConn ~ 1850 2150
 Wire Wire Line
 	10500 3500 9400 3500
@@ -829,7 +824,7 @@ Text GLabel 1350 4100 0    50   Input ~ 0
 Probe
 Text GLabel 4900 5450 0    50   Input ~ 0
 spdir
-Text GLabel 4950 5550 0    50   Input ~ 0
+Text GLabel 4900 5550 0    50   Input ~ 0
 sppwm
 $Comp
 L power:GND #PWR01
@@ -847,7 +842,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 5900 4350 6000
 Wire Wire Line
-	5100 5550 4950 5550
+	5100 5550 4900 5550
 Wire Wire Line
 	1500 5800 1250 5800
 Wire Wire Line
@@ -951,24 +946,19 @@ F 3 "" H 9300 1150 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3350 5600 3350 5700
-Connection ~ 1850 3050
-Wire Wire Line
-	1850 3050 1850 3100
-Wire Wire Line
-	1200 2500 1200 2650
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5DB555D9
-P 1200 2850
-F 0 "SW1" V 1246 2802 50  0000 R CNN
-F 1 "SW_Push" V 1155 2802 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1200 3050 50  0001 C CNN
-F 3 "~" H 1200 3050 50  0001 C CNN
-	1    1200 2850
+P 1200 2700
+F 0 "SW1" V 1246 2652 50  0000 R CNN
+F 1 "SW_Push" V 1155 2652 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1200 2900 50  0001 C CNN
+F 3 "~" H 1200 2900 50  0001 C CNN
+	1    1200 2700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1200 3050 1850 3050
+	1200 2900 1850 2900
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5D8769FD
@@ -988,29 +978,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 950  1600 2700
 NoConn ~ 1600 950 
-$Sheet
-S 5100 5250 1500 750 
-U 5DD17641
-F0 "Spindle_VFD_Control" 50
-F1 "Spindle_VFD_Control.sch" 50
-F2 "inverter_12V" I R 6600 5800 50 
-F3 "inverter_frequency_10V" I R 6600 5350 50 
-F4 "ext_sppwm" I L 5100 5550 50 
-F5 "ext_gnd" I L 5100 5900 50 
-F6 "ext_spdir" I L 5100 5450 50 
-F7 "ext_vcc" I L 5100 5800 50 
-F8 "ext_spenab" I L 5100 5350 50 
-F9 "inverter_fw_switch" I R 6600 5550 50 
-F10 "inverter_bw_switch" I R 6600 5650 50 
-F11 "inverter_gnd" I R 6600 5900 50 
-F12 "inverter_frequency_raw_10V" I R 6600 5450 50 
-$EndSheet
 Text GLabel 3450 2500 2    50   Output ~ 0
 spdir
 Wire Wire Line
 	2750 2500 3450 2500
-Text GLabel 4900 5350 0    50   Input ~ 0
-spenab
 Wire Wire Line
 	5100 5450 4900 5450
 Wire Wire Line
@@ -1086,29 +1057,17 @@ Wire Wire Line
 Connection ~ 11100 5950
 Wire Wire Line
 	11100 5950 11100 6200
-Wire Wire Line
-	1850 3050 2100 3050
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5E163504
-P 750 3300
-F 0 "J2" V 750 3150 50  0000 R CNN
-F 1 "EStop" V 650 3150 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 750 3300 50  0001 C CNN
-F 3 "~" H 750 3300 50  0001 C CNN
-	1    750  3300
-	0    -1   1    0   
+P 650 7300
+F 0 "J2" V 650 7150 50  0000 R CNN
+F 1 "EStop" V 500 7550 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 650 7300 50  0001 C CNN
+F 3 "~" H 650 7300 50  0001 C CNN
+	1    650  7300
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	850  3100 850  3050
-Wire Wire Line
-	850  3050 1200 3050
-Connection ~ 1200 3050
-Wire Wire Line
-	750  3100 750  2500
-Wire Wire Line
-	750  2500 1200 2500
-Connection ~ 1200 2500
 Wire Wire Line
 	9300 3400 9300 4850
 Wire Wire Line
@@ -1198,44 +1157,44 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E2A7440
-P 7050 5800
+P 7300 5800
 AR Path="/5D7DFDC0/5E2A7440" Ref="J?"  Part="1" 
 AR Path="/5E2A7440" Ref="J8"  Part="1" 
-F 0 "J8" H 7022 5774 50  0000 R CNN
-F 1 "inverter_power" H 7022 5683 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5800 50  0001 C CNN
-F 3 "~" H 7050 5800 50  0001 C CNN
-	1    7050 5800
+F 0 "J8" H 7272 5774 50  0000 R CNN
+F 1 "inverter_power" H 7272 5683 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7300 5800 50  0001 C CNN
+F 3 "~" H 7300 5800 50  0001 C CNN
+	1    7300 5800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 5550 6850 5550
+	6850 5550 7100 5550
 Wire Wire Line
-	6600 5650 6850 5650
+	6850 5650 7100 5650
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E2CBC81
-P 7050 5350
+P 7300 5350
 AR Path="/5D7DFDC0/5E2CBC81" Ref="J?"  Part="1" 
 AR Path="/5E2CBC81" Ref="J5"  Part="1" 
-F 0 "J5" H 7022 5324 50  0000 R CNN
-F 1 "inverter_freq" H 7022 5233 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5350 50  0001 C CNN
-F 3 "~" H 7050 5350 50  0001 C CNN
-	1    7050 5350
+F 0 "J5" H 7272 5324 50  0000 R CNN
+F 1 "inverter_freq" H 7272 5233 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7300 5350 50  0001 C CNN
+F 3 "~" H 7300 5350 50  0001 C CNN
+	1    7300 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E2B9818
-P 7050 5550
+P 7300 5550
 AR Path="/5D7DFDC0/5E2B9818" Ref="J?"  Part="1" 
 AR Path="/5E2B9818" Ref="J6"  Part="1" 
-F 0 "J6" H 7022 5524 50  0000 R CNN
-F 1 "inverter_cmd" H 7022 5433 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 5550 50  0001 C CNN
-F 3 "~" H 7050 5550 50  0001 C CNN
-	1    7050 5550
+F 0 "J6" H 7272 5524 50  0000 R CNN
+F 1 "inverter_cmd" H 7272 5433 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7300 5550 50  0001 C CNN
+F 3 "~" H 7300 5550 50  0001 C CNN
+	1    7300 5550
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1279,11 +1238,99 @@ Wire Wire Line
 Wire Wire Line
 	1200 2500 1950 2500
 Wire Wire Line
-	6850 5350 6600 5350
+	7100 5350 6850 5350
 Wire Wire Line
-	6600 5900 6850 5900
+	6850 5900 7100 5900
 Wire Wire Line
-	6600 5800 6850 5800
+	6850 5800 7100 5800
 Wire Wire Line
-	6600 5450 6850 5450
+	6850 5450 7100 5450
+Text GLabel 1350 3000 0    50   Input ~ 0
+ext_12v
+Text GLabel 4900 5700 0    50   Input ~ 0
+ext_12v
+Wire Wire Line
+	4900 5700 5100 5700
+Wire Wire Line
+	1850 2900 1850 3100
+$Sheet
+S 5100 5250 1750 850 
+U 5DD17641
+F0 "Spindle_VFD_Control" 50
+F1 "Spindle_VFD_Control.sch" 50
+F2 "inverter_12V" I R 6850 5800 50 
+F3 "inverter_frequency_10V" I R 6850 5350 50 
+F4 "ext_sppwm" I L 5100 5550 50 
+F5 "ext_gnd" I L 5100 5900 50 
+F6 "ext_spdir" I L 5100 5450 50 
+F7 "ext_vcc" I L 5100 5800 50 
+F8 "ext_spenab" I L 5100 5350 50 
+F9 "inverter_fw_switch" I R 6850 5550 50 
+F10 "inverter_bw_switch" I R 6850 5650 50 
+F11 "inverter_gnd" I R 6850 5900 50 
+F12 "inverter_frequency_raw_10V" I R 6850 5450 50 
+F13 "ext_12v" I L 5100 5700 50 
+F14 "ext_estop" I L 5100 6050 50 
+$EndSheet
+$Comp
+L power:GND #PWR02
+U 1 1 5E3CDF54
+P 1050 7500
+F 0 "#PWR02" H 1050 7250 50  0001 C CNN
+F 1 "GND" H 1050 7350 50  0000 C CNN
+F 2 "" H 1050 7500 50  0000 C CNN
+F 3 "" H 1050 7500 50  0000 C CNN
+	1    1050 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  7300 1050 7300
+Wire Wire Line
+	850  7400 1050 7400
+Wire Wire Line
+	1050 7400 1050 7500
+Wire Wire Line
+	1200 2500 1050 2500
+Wire Wire Line
+	1050 2500 1050 6300
+Connection ~ 1200 2500
+Wire Wire Line
+	5100 6050 4950 6050
+Wire Wire Line
+	4950 6050 4950 7300
+Text GLabel 4900 5350 0    50   Input ~ 0
+spenab
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5E474B40
+P 1750 7300
+AR Path="/5DD17641/5E474B40" Ref="JP?"  Part="1" 
+AR Path="/5E474B40" Ref="JP6"  Part="1" 
+F 0 "JP6" V 1704 7348 50  0000 L CNN
+F 1 "EStop_spenab" V 1795 7348 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1750 7300 50  0001 C CNN
+F 3 "~" H 1750 7300 50  0001 C CNN
+	1    1750 7300
+	1    0    0    1   
+$EndComp
+Connection ~ 1050 7300
+Wire Wire Line
+	1050 7300 1650 7300
+Wire Wire Line
+	1850 7300 4950 7300
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E489F3C
+P 1050 6400
+AR Path="/5DD17641/5E489F3C" Ref="JP?"  Part="1" 
+AR Path="/5E489F3C" Ref="JP5"  Part="1" 
+F 0 "JP5" V 1004 6448 50  0000 L CNN
+F 1 "EStop_RST" V 1095 6448 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1050 6400 50  0001 C CNN
+F 3 "~" H 1050 6400 50  0001 C CNN
+	1    1050 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 6500 1050 7300
 $EndSCHEMATC
