@@ -274,10 +274,6 @@ Wire Wire Line
 	1950 2900 1850 2900
 Connection ~ 1850 2900
 Wire Wire Line
-	2750 2100 3000 2100
-Wire Wire Line
-	3000 2200 2750 2200
-Wire Wire Line
 	2750 2300 3000 2300
 Wire Wire Line
 	2750 2800 3000 2800
@@ -288,7 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3100 3850 2400
 Wire Wire Line
-	3850 2400 2750 2400
+	3850 2400 3450 2400
 Wire Wire Line
 	1950 3400 1500 3400
 Wire Wire Line
@@ -614,8 +610,8 @@ NoConn ~ 3000 4000
 NoConn ~ 3000 2900
 NoConn ~ 3000 3000
 NoConn ~ 3000 2800
-NoConn ~ 3000 2100
-NoConn ~ 3000 2200
+NoConn ~ 4250 2000
+NoConn ~ 4250 2100
 NoConn ~ 3000 2300
 NoConn ~ 2900 6600
 NoConn ~ 1850 2150
@@ -863,7 +859,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 5800 4350 1250
 Wire Wire Line
-	1700 1250 4350 1250
+	1700 1250 3100 1250
 $Sheet
 S 8400 3150 800  1600
 U 5D91D2DB
@@ -1333,4 +1329,75 @@ F 3 "~" H 1050 6400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1050 6500 1050 7300
+$Comp
+L Memory_EEPROM:24LC16 U5
+U 1 1 5E39E512
+P 3850 2100
+F 0 "U5" H 3850 2581 50  0000 C CNN
+F 1 "24LC16" H 3850 2490 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3850 2100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf" H 3850 2100 50  0001 C CNN
+	1    3850 2100
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3850 2400
+NoConn ~ 4250 2200
+Wire Wire Line
+	3850 1800 3850 1250
+Connection ~ 3850 1250
+Wire Wire Line
+	3850 1250 4350 1250
+Wire Wire Line
+	3300 2200 3300 2000
+Wire Wire Line
+	3300 2000 3450 2000
+Wire Wire Line
+	2750 2200 3300 2200
+Wire Wire Line
+	2750 2100 3100 2100
+Wire Wire Line
+	3450 2200 3450 2400
+Connection ~ 3450 2400
+Wire Wire Line
+	3450 2400 2750 2400
+$Comp
+L Device:R R2
+U 1 1 5E415F52
+P 3300 1600
+F 0 "R2" H 3370 1646 50  0000 L CNN
+F 1 "1K5" H 3370 1555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3230 1600 50  0001 C CNN
+F 3 "~" H 3300 1600 50  0001 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E416810
+P 3100 1600
+F 0 "R1" H 3031 1554 50  0000 R CNN
+F 1 "1K5" H 3031 1645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3030 1600 50  0001 C CNN
+F 3 "~" H 3100 1600 50  0001 C CNN
+	1    3100 1600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3300 1250 3300 1450
+Connection ~ 3300 1250
+Wire Wire Line
+	3300 1250 3850 1250
+Wire Wire Line
+	3100 1250 3100 1450
+Connection ~ 3100 1250
+Wire Wire Line
+	3100 1250 3300 1250
+Wire Wire Line
+	3300 1750 3300 2000
+Connection ~ 3300 2000
+Wire Wire Line
+	3100 1750 3100 2100
+Connection ~ 3100 2100
+Wire Wire Line
+	3100 2100 3450 2100
 $EndSCHEMATC
